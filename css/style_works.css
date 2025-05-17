@@ -341,44 +341,23 @@ h3 {
   height: 250px;
 }
 
-@media screen and (max-width: 767px) {
-  .cs li {
-    width: 48%;
-    margin-bottom: 20px;
-  }
-  .cs li:nth-of-type(odd){
-    margin-right: 4%;
-  }
-  .cs lli:nth-of-type(even){
-    margin-right: 0;
-  }
-  /*
-  .cs li li a img {
-    height: 240px;
-  }
-  .cs li:not(:nth-of-type(4n-3)) {
-    margin-left: 0;
-  }
-  .cs li:nth-of-type(odd) {
-    margin-right: 2%;
-  }
-    */
-}
 
 @media screen and (max-width: 575px) {
+  .cs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
   .cs li {
-    width: 90%;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
+    width: 100%;
+    max-width: 350px;
   }
-  /*.cs li:nth-of-type(odd) {
-    margin-right: auto;
-  }
-  .cs li:not(:nth-of-type(4n-3)) {
-    margin-left: auto;
-  }*/
 }
 
 ul.sns-list {
