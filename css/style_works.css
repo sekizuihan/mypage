@@ -321,6 +321,7 @@ h3 {
 .main_img{ /*top画像*/
   margin:0 auto;
   pointer-events: none; /* カーソル操作を無効化 */
+  
 }
 
 .main_img li a img{
@@ -328,6 +329,21 @@ h3 {
   object-fit: cover;
   width: 100%;
   height: 500px;
+}
+
+@media screen and (max-width: 575px) {
+  .main_img {
+    display: grid;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .main_img li a img{
+    height: auto;
+  }
 }
 
 .sub_img{ /*sub_top画像*/
@@ -338,8 +354,26 @@ h3 {
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
-  height: 250px;
+  height: auto;
 }
+
+
+@media screen and (max-width: 575px) {
+  .sub_img {
+    display: grid;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .main_img li a img{
+    height: auto;
+  }
+}
+
+
 
 
 @media screen and (max-width: 575px) {
