@@ -134,6 +134,7 @@ h4 {
 .menu-group {
   display: flex;
   justify-content: space-between;/*オブジェクトを等間隔に配置*/
+  align-items: center;/*要素を垂直方向の中央に揃える*/
   gap: 20px; /* ボタン間のスペース */
   padding: 0;
   margin: 0;
@@ -160,7 +161,18 @@ img.icon_s {
   margin: auto;
   height: 50px;
   width: 50px;
-  bottom: 0px;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/*左上表示ミニアイコン（小サイズ）*/
+img.icon_xs {
+  margin: auto;
+  height: 25px;
+  width: 25px;
+  bottom: 30px;
   left: 0;
   right: 0;
   z-index: 1;
