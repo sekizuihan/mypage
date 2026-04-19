@@ -1,177 +1,179 @@
-[
-  {
-    "url": "works/Sway/",
-    "image": "img/sway_cap1.png",
-    "alt": "Sway VJ",
-    "name": "Sway!<br>VJ",
-    "tools": "TouchDesigner / 2026"
-  },
-  {
-    "url": "works/SurfacingAvater/",
-    "image": "img/surfacing_avatar_cap2-2.jpg",
-    "alt": "Surfacing Avatar体験の様子",
-    "name": "Surfacing Avatar<br>インスタレーション",
-    "tools": "TouchDesigner / 2025"
-  },
-  {
-    "url": "works/Congre_Haneda/",
-    "image": "img/congre_chair.png",
-    "alt": "コングレスクエア羽田 PR映像制作",
-    "name": "コングレスクエア羽田<br>PR映像制作",
-    "tools": "TouchDesigner / Derection / 2025"
-  },
-  {
-    "url": "works/Maltine20_VJ/",
-    "image": "img/maltine_sc_3_compressed.png",
-    "alt": "Maltine Records 20th EVENT「CITY」",
-    "name": "Maltine Records 20th EVENT「CITY」<br>VJ",
-    "tools": "TouchDesigner / 2025"
-  },
-  {
-    "url": "works/AmbientIbaraki_VJ/",
-    "image": "img/ambient_sc_2.png",
-    "alt": "アンビエント茨木",
-    "name": "アンビエント茨木<br>VJ",
-    "tools": "TouchDesigner / 2025"
-  },
-  {
-    "url": "works/Flow_vol7/",
-    "image": "img/flow_vol7_1.png",
-    "alt": "Flow vol.7",
-    "name": "Flow vol.7<br>VJ",
-    "tools": "TouchDesigner / 2025"
-  },
-  {
-    "url": "works/e.t.11/",
-    "image": "img/et11_3.png",
-    "alt": "e.t.11",
-    "name": "E.T. Vol.11(Electric Treatment)<br>Live Visual",
-    "tools": "TouchDesigner / 2025"
-  },
-  {
-    "url": "works/setsudanmen/",
-    "image": "img/setu_8.png",
-    "alt": "個展「切断面」",
-    "name": "KG+「切断面」<br>個展 ",
-    "tools": "Photography / Exhibition / 2025"
-  },
-  {
-    "url": "works/syakkei/",
-    "image": "img/koukokubosyu-tyu-.png",
-    "alt": "広告募集広告 借景",
-    "name": "借景<br>サイネージ映像 ",
-    "tools": "TouchDesigner / 2025"
-  },
-  {
-    "url": "works/2-p_2_MV/",
-    "image": "img/sebone_mv.png",
-    "alt": "2-@_2 MV",
-    "name": "2-p_2<br>MV",
-    "tools": "Procreate / DaVinci Resolve / 2025"
-  },
-  {
-    "url": "works/Flow_vol5/",
-    "image": "img/flow_vol5_1.png",
-    "alt": "flow vol.5",
-    "name": "Flow vol.5 <br>パフォーマンス",
-    "tools": "TouchDesigner / Ableton Live / 2025"
-  },
-  {
-    "url": "works/itbsMEETS/",
-    "image": "img/meets_2.png",
-    "alt": "in the blue shirt meets VJ",
-    "name": "in the blue shirt meets<br> VJ",
-    "tools": "TouchDesigner / 2025"
-  },
-  {
-    "url": "works/Flow_vol4/",
-    "image": "img/flow_vol4_1.png",
-    "alt": "flow vol4",
-    "name": "Flow vol.4 <br>パフォーマンス",
-    "tools": "TouchDesigner / Tidal Cycles / Ableton Live / 2025"
-  },
-  {
-    "url": "works/Flow_vol3/",
-    "image": "img/flow_vol3_1.png",
-    "alt": "flow vol3",
-    "name": "Flow vol.3 <br>VJ",
-    "tools": "TouchDesigner / 2024"
-  },
-  {
-    "url": "works/PointCloud/",
-    "image": "img/pointcloud_sample_6.png",
-    "alt": "Point Cloud VJ",
-    "name": "Point Cloud<br>VJシステム",
-    "tools": "TouchDesigner / 2024"
-  },
-  {
-    "url": "works/moumaku_souzou/",
-    "image": "img/imageof_1.png",
-    "alt": "網膜を想像する",
-    "name": "網膜を想像する<br><br>",
-    "tools": "Pure Data / 2024"
-  },
-  {
-    "url": "works/illustration/",
-    "image": "img/pic_1.png",
-    "alt": "イラスト",
-    "name": "Illustration<br><br>",
-    "tools": "Procreate / Photoshop / 2020~"
-  },
-  {
-    "url": "works/Rashisa/",
-    "image": "img/rashisa_3.png",
-    "alt": "グループ展「らしさ」",
-    "name": "有志展「らしさ」<br>グループ展",
-    "tools": "Photography / Exhibition / 2024"
-  },
-  {
-    "url": "works/minacoding/",
-    "image": "img/minacoding_2.png",
-    "alt": "minacoding",
-    "name": "#minacoding <br>キービジュアルデザイン",
-    "tools": "p5.js / Figma / 2024"
-  },
-  {
-    "url": "works/receipt_date/",
-    "image": "img/receipt_1.png",
-    "alt": "レシートの日付",
-    "name": "レシートの日付<br><br> ",
-    "tools": "Photography / 2024"
-  },
-  {
-    "url": "works/workshop_VJ/",
-    "image": "img/workshop_1.png",
-    "alt": "立命館×ボーネルンドPLAYFUL LAB FESワークショップ",
-    "name": "立命館×ボーネルンド<br>PLAYFUL LAB FES<br>ワークショップ",
-    "tools": "TouchDesigner / 2024"
-  },
-  {
-    "url": "works/Flow_vol1/",
-    "image": "img/flow_vol1_2.png",
-    "alt": "Flow vol1",
-    "name": "Flow vol.1<br>DJ / VJ",
-    "tools": "TouchDesigner / 2024"
-  },
-  {
-    "url": "works/mirror_mirrors/",
-    "image": "img/m-m_2.png",
-    "alt": "グループ展「Mirror, Mirrors」",
-    "name": "グループ展<br>「Mirror, Mirrors」",
-    "tools": "Photography / Exhibition / 2023"
-  },
-  {
-    "url": "works/Gunya_on/",
-    "image": "img/gunyaon_1.jpg",
-    "alt": "ぐにゃ音",
-    "name": "ぐにゃ音<br><br>",
-    "tools": "p5.js / 2023"
-  },
-  {
-    "url": "works/CreativeCoding/",
-    "image": "img/creative_coding_1.png",
-    "alt": "creative coding",
-    "name": "Creative coding<br><br>",
-    "tools": "Processing / 2022"
-  }
-]
+{
+  "works": [
+    {
+      "url": "works/Sway/",
+      "image": "img/sway_cap1.png",
+      "alt": "Sway VJ",
+      "name": "Sway!<br>VJ",
+      "tools": "TouchDesigner / 2026"
+    },
+    {
+      "url": "works/SurfacingAvater/",
+      "image": "img/surfacing_avatar_cap2-2.jpg",
+      "alt": "Surfacing Avatar体験の様子",
+      "name": "Surfacing Avatar<br>インスタレーション",
+      "tools": "TouchDesigner / 2025"
+    },
+    {
+      "url": "works/Congre_Haneda/",
+      "image": "img/congre_chair.png",
+      "alt": "コングレスクエア羽田 PR映像制作",
+      "name": "コングレスクエア羽田<br>PR映像制作",
+      "tools": "TouchDesigner / Derection / 2025"
+    },
+    {
+      "url": "works/Maltine20_VJ/",
+      "image": "img/maltine_sc_3_compressed.png",
+      "alt": "Maltine Records 20th EVENT「CITY」",
+      "name": "Maltine Records 20th EVENT「CITY」<br>VJ",
+      "tools": "TouchDesigner / 2025"
+    },
+    {
+      "url": "works/AmbientIbaraki_VJ/",
+      "image": "img/ambient_sc_2.png",
+      "alt": "アンビエント茨木",
+      "name": "アンビエント茨木<br>VJ",
+      "tools": "TouchDesigner / 2025"
+    },
+    {
+      "url": "works/Flow_vol7/",
+      "image": "img/flow_vol7_1.png",
+      "alt": "Flow vol.7",
+      "name": "Flow vol.7<br>VJ",
+      "tools": "TouchDesigner / 2025"
+    },
+    {
+      "url": "works/e.t.11/",
+      "image": "img/et11_3.png",
+      "alt": "e.t.11",
+      "name": "E.T. Vol.11(Electric Treatment)<br>Live Visual",
+      "tools": "TouchDesigner / 2025"
+    },
+    {
+      "url": "works/setsudanmen/",
+      "image": "img/setu_8.png",
+      "alt": "個展「切断面」",
+      "name": "KG+「切断面」<br>個展 ",
+      "tools": "Photography / Exhibition / 2025"
+    },
+    {
+      "url": "works/syakkei/",
+      "image": "img/koukokubosyu-tyu-.png",
+      "alt": "広告募集広告 借景",
+      "name": "借景<br>サイネージ映像 ",
+      "tools": "TouchDesigner / 2025"
+    },
+    {
+      "url": "works/2-p_2_MV/",
+      "image": "img/sebone_mv.png",
+      "alt": "2-@_2 MV",
+      "name": "2-p_2<br>MV",
+      "tools": "Procreate / DaVinci Resolve / 2025"
+    },
+    {
+      "url": "works/Flow_vol5/",
+      "image": "img/flow_vol5_1.png",
+      "alt": "flow vol.5",
+      "name": "Flow vol.5 <br>パフォーマンス",
+      "tools": "TouchDesigner / Ableton Live / 2025"
+    },
+    {
+      "url": "works/itbsMEETS/",
+      "image": "img/meets_2.png",
+      "alt": "in the blue shirt meets VJ",
+      "name": "in the blue shirt meets<br> VJ",
+      "tools": "TouchDesigner / 2025"
+    },
+    {
+      "url": "works/Flow_vol4/",
+      "image": "img/flow_vol4_1.png",
+      "alt": "flow vol4",
+      "name": "Flow vol.4 <br>パフォーマンス",
+      "tools": "TouchDesigner / Tidal Cycles / Ableton Live / 2025"
+    },
+    {
+      "url": "works/Flow_vol3/",
+      "image": "img/flow_vol3_1.png",
+      "alt": "flow vol3",
+      "name": "Flow vol.3 <br>VJ",
+      "tools": "TouchDesigner / 2024"
+    },
+    {
+      "url": "works/PointCloud/",
+      "image": "img/pointcloud_sample_6.png",
+      "alt": "Point Cloud VJ",
+      "name": "Point Cloud<br>VJシステム",
+      "tools": "TouchDesigner / 2024"
+    },
+    {
+      "url": "works/moumaku_souzou/",
+      "image": "img/imageof_1.png",
+      "alt": "網膜を想像する",
+      "name": "網膜を想像する<br><br>",
+      "tools": "Pure Data / 2024"
+    },
+    {
+      "url": "works/illustration/",
+      "image": "img/pic_1.png",
+      "alt": "イラスト",
+      "name": "Illustration<br><br>",
+      "tools": "Procreate / Photoshop / 2020~"
+    },
+    {
+      "url": "works/Rashisa/",
+      "image": "img/rashisa_3.png",
+      "alt": "グループ展「らしさ」",
+      "name": "有志展「らしさ」<br>グループ展",
+      "tools": "Photography / Exhibition / 2024"
+    },
+    {
+      "url": "works/minacoding/",
+      "image": "img/minacoding_2.png",
+      "alt": "minacoding",
+      "name": "#minacoding <br>キービジュアルデザイン",
+      "tools": "p5.js / Figma / 2024"
+    },
+    {
+      "url": "works/receipt_date/",
+      "image": "img/receipt_1.png",
+      "alt": "レシートの日付",
+      "name": "レシートの日付<br><br> ",
+      "tools": "Photography / 2024"
+    },
+    {
+      "url": "works/workshop_VJ/",
+      "image": "img/workshop_1.png",
+      "alt": "立命館×ボーネルンドPLAYFUL LAB FESワークショップ",
+      "name": "立命館×ボーネルンド<br>PLAYFUL LAB FES<br>ワークショップ",
+      "tools": "TouchDesigner / 2024"
+    },
+    {
+      "url": "works/Flow_vol1/",
+      "image": "img/flow_vol1_2.png",
+      "alt": "Flow vol1",
+      "name": "Flow vol.1<br>DJ / VJ",
+      "tools": "TouchDesigner / 2024"
+    },
+    {
+      "url": "works/mirror_mirrors/",
+      "image": "img/m-m_2.png",
+      "alt": "グループ展「Mirror, Mirrors」",
+      "name": "グループ展<br>「Mirror, Mirrors」",
+      "tools": "Photography / Exhibition / 2023"
+    },
+    {
+      "url": "works/Gunya_on/",
+      "image": "img/gunyaon_1.jpg",
+      "alt": "ぐにゃ音",
+      "name": "ぐにゃ音<br><br>",
+      "tools": "p5.js / 2023"
+    },
+    {
+      "url": "works/CreativeCoding/",
+      "image": "img/creative_coding_1.png",
+      "alt": "creative coding",
+      "name": "Creative coding<br><br>",
+      "tools": "Processing / 2022"
+    }
+  ]
+}

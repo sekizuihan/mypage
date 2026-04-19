@@ -58,9 +58,9 @@
     // 作品一覧を読み込んで表示
     fetch('/content/works-index.json')
       .then(function(r) { return r.json(); })
-      .then(function(works) {
+      .then(function(data) {
         var list = document.getElementById('works-list');
-        list.innerHTML = works.map(function(w) {
+        list.innerHTML = data.works.map(function(w) {
           return '<li><a href="' + w.url + '">' +
             '<img src="' + w.image + '" alt="' + w.alt + '">' +
             '<div class="text">' +
