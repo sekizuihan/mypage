@@ -3,6 +3,7 @@ backend:
   repo: sekizuihan/mypage  # ← ここを書き換えてください
   branch: main
   auth_endpoint: /auth
+  site_domain: gilded-dasik-c2506d.netlify.app
 
 # 画像のアップロード先
 media_folder: "img/uploads"
