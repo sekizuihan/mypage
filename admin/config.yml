@@ -2,7 +2,7 @@ backend:
   name: github
   repo: sekizuihan/mypage  # ← ここを書き換えてください
   branch: main
-  auth_endpoint: https://api.netlify.com/auth
+  auth_endpoint: /auth
 
 # 画像のアップロード先
 media_folder: "img/uploads"
