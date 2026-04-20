@@ -2,22 +2,15 @@ backend:
   name: github
   repo: sekizuihan/mypage
   branch: main
-  base_url: https://gilded-dasik-c2506d.netlify.app
   auth_endpoint: /auth
   site_domain: gilded-dasik-c2506d.netlify.app
 
-# 画像のアップロード先
 media_folder: "img/uploads"
 public_folder: "/img/uploads"
 
-# 日本語UI
 locale: ja
 
 collections:
-
-  # ============================================================
-  # 作品一覧（works-index.json）
-  # ============================================================
   - name: "works"
     label: "作品一覧"
     files:
@@ -26,7 +19,7 @@ collections:
         file: "content/works-index.json"
         fields:
           - label: "作品"
-            name: "works"  # JSONのルートが配列なのでダミーキーとして使用
+            name: "works"
             widget: "list"
             collapsed: false
             summary: "{{fields.name}}"
@@ -34,27 +27,19 @@ collections:
               - label: "リンク先URL"
                 name: "url"
                 widget: "string"
-                hint: "例: works/Sway/"
               - label: "サムネイル画像"
                 name: "image"
                 widget: "image"
-                hint: "例: img/sway_cap1.png　※ img/uploads/ にアップロードも可"
               - label: "画像のalt属性"
                 name: "alt"
                 widget: "string"
-                hint: "画像の説明文（スクリーンリーダー向け）"
               - label: "作品名・種別"
                 name: "name"
                 widget: "string"
-                hint: "改行は <br> で入力。例: Sway!<br>VJ"
               - label: "使用ツール・年"
                 name: "tools"
                 widget: "string"
-                hint: "例: TouchDesigner / 2026"
 
-  # ============================================================
-  # Other works（other-works.json）
-  # ============================================================
   - name: "other_works"
     label: "Other works"
     files:
@@ -71,18 +56,14 @@ collections:
               - label: "日付"
                 name: "date"
                 widget: "string"
-                hint: "例: 2025/6"
               - label: "活動内容"
                 name: "title"
                 widget: "string"
-                hint: "例: Reminiscence/Dizziness@FORESTLIMIT　VJ"
               - label: "リンクURL"
                 name: "link"
                 widget: "string"
                 required: false
-                hint: "リンクなしの場合は空欄のまま"
               - label: "リンクのラベル"
                 name: "linkLabel"
                 widget: "string"
                 required: false
-                hint: "例: Info / Detail / Article"
