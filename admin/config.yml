@@ -2,8 +2,6 @@ backend:
   name: github
   repo: sekizuihan/mypage
   branch: main
-  auth_endpoint: /auth
-  site_domain: gilded-dasik-c2506d.netlify.app
 
 media_folder: "img/uploads"
 public_folder: "/img/uploads"
