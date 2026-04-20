@@ -4,6 +4,7 @@ backend:
   branch: main
   base_url: https://gilded-dasik-c2506d.netlify.app
   auth_endpoint: /auth
+  site_domain: gilded-dasik-c2506d.netlify.app
 
 # 画像のアップロード先
 media_folder: "img/uploads"
