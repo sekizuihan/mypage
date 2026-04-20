@@ -2,7 +2,7 @@ backend:
   name: github
   repo: sekizuihan/mypage
   branch: main
-  base_url: https://portfolio-oauth.yndnnh12.workers.dev
+  base_url: https://sekizuihan.com/oauth
 
 media_folder: "img/uploads"
 public_folder: "/img/uploads"
