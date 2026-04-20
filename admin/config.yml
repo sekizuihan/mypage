@@ -3,6 +3,7 @@ backend:
   repo: sekizuihan/mypage
   branch: main
   base_url: https://gilded-dasik-c2506d.netlify.app
+  site_domain: gilded-dasik-c2506d.netlify.app
 
 media_folder: "img/uploads"
 public_folder: "/img/uploads"
