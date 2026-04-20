@@ -2,8 +2,7 @@ backend:
   name: github
   repo: sekizuihan/mypage
   branch: main
-  base_url: https://gilded-dasik-c2506d.netlify.app
-  site_domain: gilded-dasik-c2506d.netlify.app
+  base_url: https://portfolio-oauth.yndnnh12.workers.dev
 
 media_folder: "img/uploads"
 public_folder: "/img/uploads"
