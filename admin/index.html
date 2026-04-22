@@ -6,23 +6,20 @@
     <title>Portfolio CMS</title>
   </head>
   <body>
+    <script src="https://unpkg.com/decap-cms@3.1.2/dist/decap-cms.js"></script>
     <script>
       window.addEventListener('message', function(e) {
-        if (e.data && typeof e.data === 'string' && e.data.startsWith('authorization:')) {
-          var parts = e.data.split(':');
-          var provider = parts[1];
-          var status = parts[2];
-          var data = JSON.parse(parts.slice(3).join(':'));
-          if (status === 'success') {
-            localStorage.setItem('netlify-cms-user', JSON.stringify({
-              token: data.token,
-              provider: provider,
-            }));
-            window.location.reload();
-          }
+        if (e.data && typeof e.data === 'string' && e.data.startsWith('authorization:github:success:')) {
+          var jsonStr = e.data.replace('authorization:github:success:', '');
+          var data = JSON.parse(jsonStr);
+          localStorage.setItem('netlify-cms-user', JSON.stringify({
+            token: data.token,
+            provider: 'github',
+            useOpenAuthoring: false,
+          }));
+          window.location.reload();
         }
       });
     </script>
-    <script src="https://unpkg.com/decap-cms@3.1.2/dist/decap-cms.js"></script>
   </body>
 </html>
