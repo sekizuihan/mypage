@@ -2,7 +2,8 @@ backend:
   name: github
   repo: sekizuihan/mypage
   branch: main
-  base_url: https://sekizuihan.com/oauth
+  auth_type: pkce
+  app_id: Ov23liDtZaDuaMV7bRb4
 
 media_folder: "img/uploads"
 public_folder: "/img/uploads"
