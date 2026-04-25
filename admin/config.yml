@@ -1,0 +1,159 @@
+backend:
+  name: github
+  repo: sekizuihan/mypage
+  branch: main
+  auth_type: pkce
+  app_id: Ov23liDtZaDuaMV7bRb4
+
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
+
+locale: ja
+
+collections:
+  # ─── トップページ 作品グリッド ───────────────────────────────────────────
+  - name: "works_index"
+    label: "作品グリッド（トップ）"
+    files:
+      - name: "works_index"
+        label: "作品カード一覧"
+        file: "content/works-index.json"
+        fields:
+          - label: "作品"
+            name: "works"
+            widget: "list"
+            collapsed: false
+            summary: "{{fields.name}}"
+            fields:
+              - label: "リンク先URL"
+                name: "url"
+                widget: "string"
+                hint: "例: works/Sway/ または work.html?slug=sway"
+              - label: "サムネイル画像"
+                name: "image"
+                widget: "image"
+              - label: "画像のalt属性"
+                name: "alt"
+                widget: "string"
+              - label: "作品名（HTML可。改行は <br> で）"
+                name: "name"
+                widget: "string"
+              - label: "使用ツール・年"
+                name: "tools"
+                widget: "string"
+
+  # ─── 個別作品ページ（テンプレート方式・新規作品用）─────────────────────
+  - name: "work_pages"
+    label: "作品ページ（新規作成用）"
+    folder: "content/works"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    summary: "{{title}} ({{year}})"
+    fields:
+      - label: "スラッグ（URL用・半角英数字とハイフンのみ）"
+        name: "slug"
+        widget: "string"
+        hint: "例: flow-vol8 → work.html?slug=flow-vol8 でアクセスできます"
+      - label: "タイトル"
+        name: "title"
+        widget: "string"
+        hint: "例: Flow vol.8"
+      - label: "サブタイトル（種別）"
+        name: "subtitle"
+        widget: "string"
+        hint: "例: VJ / インスタレーション / 個展 / MV"
+      - label: "年"
+        name: "year"
+        widget: "number"
+        value_type: "int"
+      - label: "使用ツール・メディア"
+        name: "tools"
+        widget: "string"
+        hint: "例: TouchDesigner / 2026"
+      - label: "メイン画像（上部大画像）"
+        name: "main_images"
+        widget: "list"
+        collapsed: false
+        summary: "{{fields.alt}}"
+        fields:
+          - label: "画像"
+            name: "src"
+            widget: "image"
+          - label: "alt属性"
+            name: "alt"
+            widget: "string"
+      - label: "サブ画像（メイン下の大画像・任意）"
+        name: "sub_images"
+        widget: "list"
+        required: false
+        collapsed: true
+        summary: "{{fields.alt}}"
+        fields:
+          - label: "画像"
+            name: "src"
+            widget: "image"
+          - label: "alt属性"
+            name: "alt"
+            widget: "string"
+      - label: "動画（任意）"
+        name: "videos"
+        widget: "list"
+        required: false
+        collapsed: true
+        summary: "{{fields.alt}}"
+        fields:
+          - label: "動画ファイル"
+            name: "src"
+            widget: "file"
+          - label: "alt属性"
+            name: "alt"
+            widget: "string"
+      - label: "ギャラリー画像（グリッド表示・任意）"
+        name: "gallery_images"
+        widget: "list"
+        required: false
+        collapsed: true
+        summary: "{{fields.alt}}"
+        fields:
+          - label: "画像"
+            name: "src"
+            widget: "image"
+          - label: "alt属性"
+            name: "alt"
+            widget: "string"
+      - label: "説明文（About）"
+        name: "description"
+        widget: "markdown"
+        hint: "About セクションの本文。Markdown で記述できます。"
+
+  # ─── Other works ─────────────────────────────────────────────────────────
+  - name: "other_works"
+    label: "Other works（その他の活動）"
+    files:
+      - name: "other_works_list"
+        label: "その他の活動一覧"
+        file: "content/other-works.json"
+        fields:
+          - label: "活動リスト"
+            name: "items"
+            widget: "list"
+            collapsed: false
+            summary: "{{fields.date}}　{{fields.title}}"
+            fields:
+              - label: "日付"
+                name: "date"
+                widget: "string"
+                hint: "例: 2026/4"
+              - label: "活動内容"
+                name: "title"
+                widget: "string"
+              - label: "リンクURL（任意）"
+                name: "link"
+                widget: "string"
+                required: false
+              - label: "リンクのラベル（任意）"
+                name: "linkLabel"
+                widget: "string"
+                required: false
