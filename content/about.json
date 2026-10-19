@@ -1,0 +1,176 @@
+{
+  "name": "米田 / Yoneda Nanaho",
+  "bio": "2003年生まれ。日常的なイメージの収集や複製技術に関心を持ち、写真やVJを起点とした領域横断的なビジュアル表現を展開している。\n\nTouchDesignerを主軸とした視覚演出やシステム構築を得意とし、骨格推定（MediaPipe）を活用したリアルタイムなインタラクティブ・インスタレーションの制作など、プログラミング技術と視覚芸術を融合させたアプローチを実践している。毎回の演出でシステムから構築するVJ・映像演出では、フォトグラメトリや写真を用いた生活の手触りとパフォーマンス空間を緩やかに繋げるような有機的な表現を得意とし、既存の形式に捉われない表現を日々模索している。\n\n「米田」名義でVJとして、「sekizuihan」名義でDJとして活動。「Maltine Records 20th EVENT『CITY』」や「アンビエント茨木」、「E.T. Vol.11 (Electric Treatment)」などでのライブビジュアル演出を担当。近年は京都国際写真祭の関連イベント「KG+」での個展「切断面」の開催をはじめ、グループ展への参加から、オーディオビジュアルイベント「Flow」の立ち上げ、さらに企業のPR映像の企画・映像制作まで、多角的に活動の場を広げている。",
+  "sections": [
+    {
+      "title": "Internship",
+      "items": [
+        {
+          "date": "2025/3-4",
+          "text": "有限会社JIKAN Design インターンシップ",
+          "link": "",
+          "linkLabel": ""
+        },
+        {
+          "date": "2024/9-10",
+          "text": "株式会社「1→10」インターンシップ",
+          "link": "https://labs.1-10.com/2024/11/01/4501",
+          "linkLabel": "Article"
+        },
+        {
+          "date": "2024/3-4",
+          "text": "KYOTOGRAPHIE2024 インターンシップ",
+          "link": "",
+          "linkLabel": ""
+        }
+      ]
+    },
+    {
+      "title": "Exhibition",
+      "items": [
+        {
+          "date": "2026/3",
+          "text": "立命館大学映像展@立命館大学",
+          "link": "",
+          "linkLabel": ""
+        },
+        {
+          "date": "2025/4",
+          "text": "京都国際写真祭サテライトKG+ 個展「切断面」@gallery Metabo",
+          "link": "",
+          "linkLabel": ""
+        },
+        {
+          "date": "2024/11",
+          "text": "3人展「Re：構築」@kumagusuku",
+          "link": "",
+          "linkLabel": ""
+        },
+        {
+          "date": "2024/10",
+          "text": "ジャンキャリ2024@立命館大学",
+          "link": "",
+          "linkLabel": ""
+        },
+        {
+          "date": "2024/8",
+          "text": "グループ展「らしさ」@京都写真美術館",
+          "link": "",
+          "linkLabel": ""
+        },
+        {
+          "date": "2023/10",
+          "text": "ジャンキャリ2023@立命館大学",
+          "link": "",
+          "linkLabel": ""
+        },
+        {
+          "date": "2023/9",
+          "text": "グループ展「Mirror,mirrors」　@堀川御池ギャラリー",
+          "link": "",
+          "linkLabel": ""
+        }
+      ]
+    },
+    {
+      "title": "VJ / Live visual",
+      "items": [
+        {
+          "date": "2026/3",
+          "text": "Sai-Syukatsudou@Bar fader　VJ",
+          "link": "https://x.com/syukatsudou/status/2016466296263598184?s=20",
+          "linkLabel": "Info"
+        },
+        {
+          "date": "2026/3",
+          "text": "Sway@socore factory　VJ",
+          "link": "https://www.instagram.com/p/DUNg8dJEWd3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+          "linkLabel": "Info"
+        },
+        {
+          "date": "2026/3",
+          "text": "Flow vol.10 VJ /w きむらこうや",
+          "link": "https://x.com/2024_hitahita/status/2035553411077431632?s=20",
+          "linkLabel": "Info"
+        },
+        {
+          "date": "2026/2",
+          "text": "draw();#7@VRChat　VJ",
+          "link": "https://x.com/function_draw/status/2016723000767500506?s=20",
+          "linkLabel": "Info"
+        },
+        {
+          "date": "2026/1",
+          "text": "3NINKAI@MEMEME　VJ",
+          "link": "https://x.com/pogo_voc/status/2004545271762407599?s=20",
+          "linkLabel": "Info"
+        },
+        {
+          "date": "2025/12",
+          "text": "Maltine Records 20th EVENT『CITY』@Spotify O-EAST　VJ",
+          "link": "../../works/Maltine20_VJ/",
+          "linkLabel": "Detail"
+        },
+        {
+          "date": "2025/11",
+          "text": "OVERFLOW@bar fader　VJ",
+          "link": "https://x.com/flow_fellow/status/1976848142047068507?s=20",
+          "linkLabel": "Info"
+        },
+        {
+          "date": "2025/11",
+          "text": "茨木市主催　おにくるEXPO　ファッションショー映像演出",
+          "link": "https://www.city.ibaraki.osaka.jp/kikou/shimin/kyousou/menu/onikurutorikumi/67333.html",
+          "linkLabel": "Info"
+        },
+        {
+          "date": "2025/10",
+          "text": "アンビエント茨木@福祉文化会館(オークシアター)　VJ",
+          "link": "../../works/AmbientIbaraki_VJ/",
+          "linkLabel": "Detail"
+        },
+        {
+          "date": "2025/10",
+          "text": "draw(Tokyo); @Club Asia　VJ　/w Flow",
+          "link": "https://x.com/flow_fellow/status/1976231491635192203?s=20",
+          "linkLabel": "Info"
+        },
+        {
+          "date": "2025/7",
+          "text": "Flow vol.7　VJ",
+          "link": "../../works/Flow_vol7/",
+          "linkLabel": "Detail"
+        },
+        {
+          "date": "2025/6",
+          "text": "Reminiscence/Dizziness@FORESTLIMIT　VJ",
+          "link": "https://x.com/Ni_2_Ni_/status/1926956522925346996?s=20",
+          "linkLabel": "Info"
+        },
+        {
+          "date": "2025/1",
+          "text": "Prototype@awa bar　VJ",
+          "link": "https://x.com/nexus_106/status/1879136391172403487",
+          "linkLabel": "Info"
+        }
+      ]
+    },
+    {
+      "title": "Prize",
+      "items": [
+        {
+          "date": "2023/10",
+          "text": "ジャンキャリ2023 展示部門　最優秀賞",
+          "link": "",
+          "linkLabel": ""
+        },
+        {
+          "date": "2022/8",
+          "text": "Unilife学生下宿年鑑2023表紙デザインコンテスト　2位",
+          "link": "https://prtimes.jp/main/html/rd/p/000000138.000028927.html",
+          "linkLabel": "Detail"
+        }
+      ]
+    }
+  ]
+}

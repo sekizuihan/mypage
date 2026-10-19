@@ -2,27 +2,34 @@ backend:
   name: github
   repo: sekizuihan/mypage
   branch: main
-  auth_type: pat
-  app_id: Ov23liDtZaDuaMV7bRb4
+  # アクセストークン（PAT）でログインする。OAuth サーバーが不要。
+  # ※ auth_type / app_id は OAuth 用の設定なので書かない。
+  #   （auth_type に "pat" という値は存在せず、書くと Netlify の
+  #     OAuth サーバーへ飛ばされてログインが完了しなくなる）
+  auth_methods:
+    - token
 
 media_folder: "img/uploads"
 public_folder: "/img/uploads"
 
-locale: ja
-
+# 左メニューはサイトの構造順（トップ → About → 作品ページ）。
+# 各ページ内の項目も、実際のページで表示される順（上から）に並んでいる。
 collections:
-  # ─── トップページ 作品グリッド ───────────────────────────────────────────
-  - name: "works_index"
-    label: "作品グリッド（トップ）"
+  # ─── トップページ（index.html）───────────────────────────────────────────
+  - name: "top"
+    label: "トップページ"
+    description: "index.html。上から「作品グリッド」→「Other works」の順に表示されます。"
     files:
       - name: "works_index"
-        label: "作品カード一覧"
+        label: "① 作品グリッド"
         file: "content/works-index.json"
         fields:
           - label: "作品"
             name: "works"
             widget: "list"
-            collapsed: false
+            hint: "上から順に、グリッドの左上から並びます。「追加」すると一番上（左上）に入ります。ドラッグで並べ替えできます。"
+            add_to_top: true
+            collapsed: true
             summary: "{{fields.name}}"
             fields:
               - label: "リンク先URL"
@@ -41,6 +48,87 @@ collections:
               - label: "使用ツール・年"
                 name: "tools"
                 widget: "string"
+
+      - name: "other_works"
+        label: "② Other works"
+        file: "content/other-works.json"
+        fields:
+          - label: "活動"
+            name: "items"
+            widget: "list"
+            hint: "上から順に表示されます。ドラッグで並べ替えできます。"
+            collapsed: true
+            summary: "{{fields.date}}　{{fields.title}}"
+            fields:
+              - label: "日付"
+                name: "date"
+                widget: "string"
+                hint: "例: 2026/4"
+              - label: "活動内容"
+                name: "title"
+                widget: "string"
+              - label: "リンクURL（任意）"
+                name: "link"
+                widget: "string"
+                required: false
+              - label: "リンクのラベル（任意）"
+                name: "linkLabel"
+                widget: "string"
+                required: false
+
+  # ─── About ページ（works/About/index.html）────────────────────────────────
+  - name: "about"
+    label: "About ページ"
+    description: "works/About/。上から「名前」→「About」→ 各セクション（Internship / Exhibition / …）の順に表示されます。"
+    files:
+      - name: "about"
+        label: "About ページ"
+        file: "content/about.json"
+        fields:
+          - label: "名前（ページ最上部）"
+            name: "name"
+            widget: "string"
+          - label: "About（自己紹介文）"
+            name: "bio"
+            widget: "text"
+            hint: "空行をはさむと段落が分かれます。"
+          - label: "セクション"
+            name: "sections"
+            widget: "list"
+            hint: "Internship / Exhibition などの見出しごとのまとまり。上から順に表示されます。ドラッグで並べ替えできます。"
+            collapsed: true
+            summary: "{{fields.title}}"
+            fields:
+              - label: "見出し"
+                name: "title"
+                widget: "string"
+                hint: "例: Exhibition / VJ / Live visual"
+              - label: "項目"
+                name: "items"
+                widget: "list"
+                hint: "上から順に表示されます。「追加」すると一番上に入ります。"
+                add_to_top: true
+                collapsed: true
+                summary: "{{fields.date}}　{{fields.text}}"
+                fields:
+                  - label: "日付"
+                    name: "date"
+                    widget: "string"
+                    hint: "例: 2026/10 や 2024/9-10"
+                  - label: "内容"
+                    name: "text"
+                    widget: "string"
+                    hint: "例: グループ展「〇〇」@会場名"
+                  - label: "リンクURL（任意）"
+                    name: "link"
+                    widget: "string"
+                    required: false
+                    hint: "サイト内の作品ページなら ../../works/フォルダ名/"
+                  - label: "リンクのラベル（任意）"
+                    name: "linkLabel"
+                    widget: "string"
+                    required: false
+                    hint: "例: Info / Detail / Article"
 
   # ─── 個別作品ページ（テンプレート方式・新規作品用）─────────────────────
   - name: "work_pages"
@@ -127,33 +215,3 @@ collections:
         name: "description"
         widget: "markdown"
         hint: "About セクションの本文。Markdown で記述できます。"
-
-  # ─── Other works ─────────────────────────────────────────────────────────
-  - name: "other_works"
-    label: "Other works（その他の活動）"
-    files:
-      - name: "other_works_list"
-        label: "その他の活動一覧"
-        file: "content/other-works.json"
-        fields:
-          - label: "活動リスト"
-            name: "items"
-            widget: "list"
-            collapsed: false
-            summary: "{{fields.date}}　{{fields.title}}"
-            fields:
-              - label: "日付"
-                name: "date"
-                widget: "string"
-                hint: "例: 2026/4"
-              - label: "活動内容"
-                name: "title"
-                widget: "string"
-              - label: "リンクURL（任意）"
-                name: "link"
-                widget: "string"
-                required: false
-              - label: "リンクのラベル（任意）"
-                name: "linkLabel"
-                widget: "string"
-                required: false

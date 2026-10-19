@@ -51,21 +51,13 @@
   <footer><br></footer>
   <a href="#" id="page_top"></a>
 
+  <script src="js/render.js"></script>
   <script>
     // 作品グリッドを読み込んで表示
     fetch('/content/works-index.json')
       .then(function(r) { return r.json(); })
       .then(function(data) {
-        var list = document.getElementById('works-list');
-        list.innerHTML = data.works.map(function(w) {
-          return '<li><a href="' + w.url + '">' +
-            '<img src="' + w.image + '" alt="' + w.alt + '">' +
-            '<div class="text">' +
-            '<p class="name">' + w.name + '</p>' +
-            '<p>' + w.tools + '</p>' +
-            '</div>' +
-            '</a></li>';
-        }).join('');
+        document.getElementById('works-list').innerHTML = PortfolioRender.worksGridHTML(data);
       })
       .catch(function(e) {
         console.error('作品一覧の読み込みに失敗しました:', e);
@@ -75,14 +67,7 @@
     fetch('/content/other-works.json')
       .then(function(r) { return r.json(); })
       .then(function(data) {
-        var container = document.getElementById('other-works-list');
-        container.innerHTML = data.items.map(function(item) {
-          var text = item.date + '　' + item.title;
-          if (item.link) {
-            text += '　<a href="' + item.link + '"><font color="#a9a9a9"><u>' + item.linkLabel + '</u></font></a>';
-          }
-          return text + '<br><br>';
-        }).join('');
+        document.getElementById('other-works-list').innerHTML = PortfolioRender.otherWorksHTML(data);
       })
       .catch(function(e) {
         console.error('Other works の読み込みに失敗しました:', e);

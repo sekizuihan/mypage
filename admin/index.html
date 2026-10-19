@@ -7,5 +7,44 @@
   </head>
   <body>
     <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+    <script src="../js/render.js"></script>
+    <script>
+      // 編集画面右側のプレビューを、実際のサイトと同じ HTML・CSS で表示する。
+      // HTML の組み立ては js/render.js をサイト本体と共有している。
+      var h = CMS.React.createElement;
+
+      function dataOf(props) {
+        return props.entry.getIn(['data']).toJS();
+      }
+
+      // ── トップページ（css/style.css）
+      CMS.registerPreviewStyle('../css/bootstrap.css', { collection: 'top' });
+      CMS.registerPreviewStyle('../css/style.css', { collection: 'top' });
+
+      CMS.registerPreviewTemplate('works_index', function (props) {
+        return h('main', null,
+          h('section', null,
+            h('ul', { className: 'cs', dangerouslySetInnerHTML: { __html: PortfolioRender.worksGridHTML(dataOf(props)) } })));
+      });
+
+      CMS.registerPreviewTemplate('other_works', function (props) {
+        return h('main', null,
+          h('section', null,
+            h('div', { className: 'text' },
+              h('h3', null, 'Other works'),
+              h('br'),
+              h('font', { color: '#a9a9a9' },
+                h('p', { dangerouslySetInnerHTML: { __html: PortfolioRender.otherWorksHTML(dataOf(props)) } })))));
+      });
+
+      // ── About ページ（css/style_works.css）
+      CMS.registerPreviewStyle('../css/bootstrap.css', { collection: 'about' });
+      CMS.registerPreviewStyle('../css/style_works.css', { collection: 'about' });
+
+      CMS.registerPreviewTemplate('about', function (props) {
+        return h('main', null,
+          h('div', { className: 'container', dangerouslySetInnerHTML: { __html: PortfolioRender.aboutHTML(dataOf(props)) } }));
+      });
+    </script>
   </body>
 </html>
