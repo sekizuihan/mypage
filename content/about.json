@@ -1,36 +1,13 @@
 {
   "name": "米田 / Yoneda Nanaho",
-  "bio": "2003年生まれ。日常的なイメージの収集や複製技術に関心を持ち、写真やVJを起点とした領域横断的なビジュアル表現を展開している。\n\nTouchDesignerを主軸とした視覚演出やシステム構築を得意とし、骨格推定（MediaPipe）を活用したリアルタイムなインタラクティブ・インスタレーションの制作など、プログラミング技術と視覚芸術を融合させたアプローチを実践している。毎回の演出でシステムから構築するVJ・映像演出では、フォトグラメトリや写真を用いた生活の手触りとパフォーマンス空間を緩やかに繋げるような有機的な表現を得意とし、既存の形式に捉われない表現を日々模索している。\n\n「米田」名義でVJとして、「sekizuihan」名義でDJとして活動。「Maltine Records 20th EVENT『CITY』」や「アンビエント茨木」、「E.T. Vol.11 (Electric Treatment)」などでのライブビジュアル演出を担当。近年は京都国際写真祭の関連イベント「KG+」での個展「切断面」の開催をはじめ、グループ展への参加から、オーディオビジュアルイベント「Flow」の立ち上げ、さらに企業のPR映像の企画・映像制作まで、多角的に活動の場を広げている。",
+  "bio": "2003年生まれ。日常的なイメージの収集や複製技術に関心を持ち、写真やVJを起点とした領域横断的なビジュアル表現を展開している。\n\nTouchDesignerを主軸とした視覚演出やシステム構築を得意とし、プログラミング技術と視覚芸術を融合させたアプローチを実践している。VJ・映像演出では、フォトグラメトリや写真を用いた生活の手触りとパフォーマンス空間を緩やかに繋げるような有機的な表現を得意とし、既存の形式に捉われない表現を日々模索している。\n\n「米田」名義でVJとして、「sekizuihan」名義でDJとして活動。「Maltine Records 20th EVENT『CITY』」や「アンビエント茨木」、「E.T. Vol.11 (Electric Treatment)」などでのライブビジュアル演出を担当。近年は京都国際写真祭の関連イベント「KG+」での個展「切断面」の開催をはじめ、グループ展への参加から、オーディオビジュアルイベント「Flow」の立ち上げ、さらに企業のPR映像の企画・映像制作まで、多角的に活動の場を広げている。",
   "sections": [
-    {
-      "title": "Internship",
-      "items": [
-        {
-          "date": "2025/3-4",
-          "text": "有限会社JIKAN Design インターンシップ",
-          "link": "",
-          "linkLabel": ""
-        },
-        {
-          "date": "2024/9-10",
-          "text": "株式会社「1→10」インターンシップ",
-          "link": "https://labs.1-10.com/2024/11/01/4501",
-          "linkLabel": "Article"
-        },
-        {
-          "date": "2024/3-4",
-          "text": "KYOTOGRAPHIE2024 インターンシップ",
-          "link": "",
-          "linkLabel": ""
-        }
-      ]
-    },
     {
       "title": "Exhibition",
       "items": [
         {
           "date": "2026/8",
-          "text": "グループ展「とけきらないようにまぜてみる」",
+          "text": "グループ展「とけきらないようにまぜてみる」@Project Space hazi",
           "link": "https://www.instagram.com/p/Dbo4FPAEzWv/?utm_source=ig_web_copy_link&vrfl=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
           "linkLabel": "link"
         },
@@ -79,8 +56,38 @@
       ]
     },
     {
-      "title": "VJ / Live visual",
+      "title": "VJ / Movie works",
       "items": [
+        {
+          "date": "2026/7",
+          "text": "無原唱レコードフェス2026「RE;GAIN」　映像制作",
+          "link": "https://x.com/sekizuihan/status/2081403438412493046?s=20",
+          "linkLabel": "Link"
+        },
+        {
+          "date": "2026/7",
+          "text": "CRACK vol.2　VJ",
+          "link": "https://x.com/CrackNagoya/status/2059590518540325313?s=20",
+          "linkLabel": "Info"
+        },
+        {
+          "date": "2026/7",
+          "text": "Signal Continuum　VJ w/Mio Takeyama",
+          "link": "https://www.instagram.com/p/DZCuHb-lNl8/?utm_source=ig_web_copy_link&dlrf=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
+          "linkLabel": "Info"
+        },
+        {
+          "date": "2026/6",
+          "text": "NxPC.LIVE vol.78　VJ w/po-yoyo",
+          "link": "https://x.com/nxpclab/status/2058888143592698134?s=20",
+          "linkLabel": "Info"
+        },
+        {
+          "date": "2026/5",
+          "text": "I'm with you　VJ",
+          "link": "https://www.instagram.com/p/DWtSecGieXz/?utm_source=ig_web_copy_link&exln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
+          "linkLabel": "Info"
+        },
         {
           "date": "2026/3",
           "text": "Sai-Syukatsudou@Bar fader　VJ",
@@ -95,7 +102,7 @@
         },
         {
           "date": "2026/3",
-          "text": "Flow vol.10 VJ /w きむらこうや",
+          "text": "Flow vol.10　VJ w/ きむらこうや",
           "link": "https://x.com/2024_hitahita/status/2035553411077431632?s=20",
           "linkLabel": "Info"
         },
@@ -175,6 +182,29 @@
           "text": "Unilife学生下宿年鑑2023表紙デザインコンテスト　2位",
           "link": "https://prtimes.jp/main/html/rd/p/000000138.000028927.html",
           "linkLabel": "Detail"
+        }
+      ]
+    },
+    {
+      "title": "Internship",
+      "items": [
+        {
+          "date": "2025/3-4",
+          "text": "有限会社JIKAN Design インターンシップ",
+          "link": "",
+          "linkLabel": ""
+        },
+        {
+          "date": "2024/9-10",
+          "text": "株式会社「1→10」インターンシップ",
+          "link": "https://labs.1-10.com/2024/11/01/4501",
+          "linkLabel": "Article"
+        },
+        {
+          "date": "2024/3-4",
+          "text": "KYOTOGRAPHIE2024 インターンシップ",
+          "link": "",
+          "linkLabel": ""
         }
       ]
     }
