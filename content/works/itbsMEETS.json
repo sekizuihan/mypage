@@ -1,0 +1,34 @@
+{
+  "slug": "itbsMEETS",
+  "title": "in the blue shirt meets VJ",
+  "year": "2025",
+  "main_images": [
+    {
+      "src": "/img/itbs_meets.png",
+      "alt": "meets_2"
+    }
+  ],
+  "sub_images": [],
+  "youtube": [],
+  "videos": [],
+  "gallery_images": [
+    {
+      "src": "/img/meets_3.png",
+      "alt": "in the blue shirt meets_1"
+    },
+    {
+      "src": "/img/meets_4.png",
+      "alt": "in the blue shirt meets_2"
+    },
+    {
+      "src": "/img/meets_5.png",
+      "alt": "in the blue shirt meets_3"
+    },
+    {
+      "src": "/img/itbsm_1.png",
+      "alt": "in the blue shirt meets_4"
+    }
+  ],
+  "gallery_style": "cs",
+  "description": "2025年1月19日 京都 club metroで開催された、in the blue shirt meets vol.2にて、in the blue shirt さん、蓮沼執太さんのVJをさせていただきました。\n\n会場である京都で収集したフォトグラメトリや動画素材などを取り入れつつ、身近なオブジェクトとお二方の音楽性を結びつけるような演出を意識しました。\n\nTouchDesigner, Scaniverce, movie"
+}

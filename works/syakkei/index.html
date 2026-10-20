@@ -26,37 +26,7 @@
             <!--<li class="menu-item"><a href="#">Contact</a></li>-->
       </ul>      </header>
 
-    <section>
-      <h2>借景</h2>
-      <h4>2025</h4>
-    </section>
-
-    <section>
-      <ul class="main_img">
-        <li><a href="">
-          <img src="../../img/koukokubosyu-tyu-copy.png" alt="広告募集中">
-        </a></li>
-      </ul>
-    </section>
-
-    <section>
-      <iframe width="100%" height="450" src="https://www.youtube.com/embed/HNCpQlVtKFE?si=2FMG6qzYMNqlPV9q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </section>
-
-    <section>
-      <h3>About</h3>
-      <div class="text">
-      <p>フォトグラメトリで取得したデータと、3DCGを組み合わせて構成しました。<br>「<a href="https://neort.io/challenge/cuupks4n70rs0t8mq2g0"><font color="#a9a9a9">広告募集中広告</font></a>」企画に応募し、KITTE大阪のデジタルサイネージにて投影されました。
-      <br>
-      <br>
-      広告募集中広告という題のため、暮らしの中に広告が置かれるイメージを、集ってゆるやかに揺れ動くフォトグラメトリデータで表しました。
-      <br>
-      <br>
-      TouchDesigner, Scaniverce
-      <br>
-      </p>
-    </div>
-  </section>
+    <!-- タイトル・画像・動画・About は content/works/syakkei.json から生成（admin の「作品ページ」で編集） -->
 
     <!-- 最上部に戻るボタンここから -->
      <a href="#" id="totop"></a>
@@ -71,6 +41,19 @@
   
   <a href="#" id="page_top"></a>
   
+
+  <script src="../../js/render.js?v=2"></script>
+  <script>
+    fetch('../../content/works/syakkei.json')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        document.querySelector('.container > header')
+          .insertAdjacentHTML('afterend', PortfolioRender.workHTML(data, { base: '../../' }));
+      })
+      .catch(function(e) {
+        console.error('作品データの読み込みに失敗しました:', e);
+      });
+  </script>
 
 </body>
 

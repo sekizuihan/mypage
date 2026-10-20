@@ -25,77 +25,7 @@
             <!--<li class="menu-item"><a href="#">Contact</a></li>-->
       </ul>      </header>
 
-    <section>
-      <h2>コングレスクエア羽田 PR映像制作</h2>
-      <h4>2025</h4>
-    </section>
-
-    <section>
-      <ul class="main_img">
-        <li><a href="">
-          <img src="../../img/congre_chair.png" alt="コングレスクエア羽田 PR映像">
-        </a></li>
-      </ul>
-    </section>
-
-    <section>
-      <video width="100%" controls style="max-width: 100%; height: auto; display: block;">
-        <source src="../../img/Congres_movie_30s_final_compressed.mp4" type="video/mp4" alt="コングレスクエア羽田 PR映像">
-        お使いのブラウザは動画タグに対応していません。
-      </video>
-    </section>
-
-    <section>
-      <ul class="cs">
-        <li><a href="">
-          <img src="../../img/congre_cap1.png" alt="congrePR動画 シーンキャプチャ">
-        </a></li>
-        <li><a href="">
-          <img src="../../img/congre_cap2.png" alt="congre">
-        </a></li>
-        <li><a href="">
-          <img src="../../img/congre_chair2.png" alt="congrePR動画 シーンキャプチャ">
-        </a></li>
-        <li><a href="">
-          <img src="../../img/congre_dai.png" alt="congrePR動画 シーンキャプチャ">
-        </a></li>
-        <li><a href="">
-          <img src="../../img/congre_cap3.png" alt="congrePR動画 シーンキャプチャ">
-          </a></li>
-        <li><a href="">
-          <img src="../../img/congre_cap4.png" alt="congrePR動画 シーンキャプチャ">
-        </a></li>
-        <li><a href="">
-          <img src="../../img/congre_cap8.png" alt="congrePR動画 シーンキャプチャ">
-        </a></li>
-        <li><a href="">
-          <img src="../../img/congre_mic.png" alt="congrePR動画 シーンキャプチャ">
-        </a></li>
-        <li><a href="">
-          <img src="../../img/congre_cap6.png" alt="congrePR動画 シーンキャプチャ">
-        </a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>About</h3>
-      <div class="text">
-      <p>株式会社コングレが運営する、貸し会議室「コングレスクエア羽田」のPR映像を制作しました。企画・制作進行・統括・映像制作を担当しました。
-      <br><br>コングレスクエアやコングレの、会議室やそれを運営する組織を取り巻く既存の企業イメージを、ビジュアル的から崩していこうとする試みです。
-      <br>コングレスクエア羽田にある備品をフォトグラメトリでスキャンし、マイクや椅子、演台などが動き回る映像を作りました。そのVJのパフォーマンスをコングレスクエア羽田で実際に行い、その実際の様子と共にプロモーション映像として構成しました。
-      <br><br>
-      音楽：aberyōta
-      <br>
-      撮影：三輪恵大
-      <br>
-      Special thanks：NEORT
-      <br>
-      <br>
-      TouchDesigner, Scaniverce, Derection
-      <br>
-      </p>
-    </div>
-  </section>
+    <!-- タイトル・画像・動画・About は content/works/Congre_Haneda.json から生成（admin の「作品ページ」で編集） -->
 
     <!-- 最上部に戻るボタンここから -->
      <a href="#" id="totop"></a>
@@ -110,6 +40,19 @@
   
   <a href="#" id="page_top"></a>
   
+
+  <script src="../../js/render.js?v=2"></script>
+  <script>
+    fetch('../../content/works/Congre_Haneda.json')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        document.querySelector('.container > header')
+          .insertAdjacentHTML('afterend', PortfolioRender.workHTML(data, { base: '../../' }));
+      })
+      .catch(function(e) {
+        console.error('作品データの読み込みに失敗しました:', e);
+      });
+  </script>
 
 </body>
 

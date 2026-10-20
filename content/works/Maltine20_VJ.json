@@ -1,0 +1,55 @@
+{
+  "slug": "Maltine20_VJ",
+  "title": "Maltine Records 20th「CITY」 VJ",
+  "year": "2025",
+  "main_images": [
+    {
+      "src": "/img/maltine_sc_3.png",
+      "alt": "maltine record 20th Hercelot VJ"
+    }
+  ],
+  "sub_images": [],
+  "youtube": [],
+  "videos": [
+    {
+      "src": "/img/maltine_cap_2_compressed.mp4"
+    },
+    {
+      "src": "/img/maltine_cap_1_compressed.mp4"
+    },
+    {
+      "src": "/img/maltine_cap_3_compressed.mp4"
+    },
+    {
+      "src": "/img/maltine_3_compressed.mp4"
+    }
+  ],
+  "gallery_images": [
+    {
+      "src": "/img/hercelot_vj.png",
+      "alt": "Hercelot VJシーン"
+    },
+    {
+      "src": "/img/maltine_sc_4.png",
+      "alt": "Hercelot VJシーン"
+    },
+    {
+      "src": "/img/maltine_sc_6.png",
+      "alt": "Hercelot VJシーン"
+    },
+    {
+      "src": "/img/maltine_sc_1.png",
+      "alt": "Hercelot VJシーン"
+    },
+    {
+      "src": "/img/maltine_sc_2.png",
+      "alt": "Hercelot VJシーン"
+    },
+    {
+      "src": "/img/maltine_sc_5.png",
+      "alt": "Hercelot VJシーン"
+    }
+  ],
+  "gallery_style": "cs",
+  "description": "Maltine Records 20th Anniversary 20 Hour Event DAYにて、HercelotさんのVJを担当させていただきました。\n\n\nMaltine Records 20th Anniversary 20 Hour Event -DAY-\n日時：2025年12月7日 9:00~\n場所：Spotify O-EAST\n\nTouchDesigner, Scaniverce"
+}

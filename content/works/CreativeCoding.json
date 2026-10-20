@@ -1,0 +1,78 @@
+{
+  "slug": "CreativeCoding",
+  "title": "Creative coding",
+  "year": "2022",
+  "main_images": [
+    {
+      "src": "/img/creative_coding_1.png",
+      "alt": "creative coding_1"
+    }
+  ],
+  "sub_images": [],
+  "youtube": [],
+  "videos": [],
+  "gallery_images": [
+    {
+      "src": "/img/20220611_01.png",
+      "alt": "flow_vol3_1"
+    },
+    {
+      "src": "/img/20220630.gif",
+      "alt": "flow_vol3_2"
+    },
+    {
+      "src": "/img/20220620_4.png",
+      "alt": "flow_vol3_3"
+    },
+    {
+      "src": "/img/20220601.png",
+      "alt": "flow_vol3_4"
+    },
+    {
+      "src": "/img/20220602_03.png",
+      "alt": "flow_vol3_4"
+    },
+    {
+      "src": "/img/20220618.gif",
+      "alt": "flow_vol3_5"
+    },
+    {
+      "src": "/img/20220626.gif",
+      "alt": "flow_vol3_5"
+    },
+    {
+      "src": "/img/20220620_6.png",
+      "alt": "flow_vol3_5"
+    },
+    {
+      "src": "/img/20220613.gif",
+      "alt": "flow_vol3_5"
+    },
+    {
+      "src": "/img/20220615.gif",
+      "alt": "flow_vol3_5"
+    },
+    {
+      "src": "/img/20220616.gif",
+      "alt": "flow_vol3_5"
+    },
+    {
+      "src": "/img/20220627_2.gif",
+      "alt": "flow_vol3_5"
+    },
+    {
+      "src": "/img/20220607.png",
+      "alt": "flow_vol3_5"
+    },
+    {
+      "src": "/img/20220624.gif",
+      "alt": "flow_vol3_5"
+    },
+    {
+      "src": "/img/20220604.png",
+      "alt": "flow_vol3_5"
+    }
+  ],
+  "gallery_style": "cs_an",
+  "description": "#minacodingというコーディングチャレンジに一ヶ月間参加した際に制作。\n毎日新たな機能を試し技術面の発展をはかりつつ、グラフィック面にも配慮しながら制作しました。\n\nProcessing"
+}

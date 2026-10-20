@@ -1,0 +1,30 @@
+{
+  "slug": "workshop_VJ",
+  "title": "立命館×ボーネルンド PLAYFUL LAB FES ワークショップ",
+  "year": "2024",
+  "main_images": [
+    {
+      "src": "/img/workshop_re.png",
+      "alt": "ワークショップ"
+    }
+  ],
+  "sub_images": [],
+  "youtube": [],
+  "videos": [],
+  "gallery_images": [
+    {
+      "src": "/img/workshop_2.png",
+      "alt": "ワークショップの様子"
+    },
+    {
+      "src": "/img/workshop_3.png",
+      "alt": "ワークショップの様子"
+    },
+    {
+      "src": "/img/workshop_4.png",
+      "alt": "ワークショップの様子"
+    }
+  ],
+  "gallery_style": "cs",
+  "description": "2024年7月に開催された立命館×ボーネルンド PLAYFUL LAB FES にて、子ども向けのDJ / VJ 体験ワークショップを実施しました。\nDJとVJ、それぞれ別の組に体験いただくことも行うことで、即興的な音と映像のセッションが生まれ、当日は20人以上の方に体験していただくことができました。\n\nTouchDesigner"
+}

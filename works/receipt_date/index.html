@@ -26,88 +26,7 @@
             <!--<li class="menu-item"><a href="#">Contact</a></li>-->
       </ul>      </header>
 
-    <section>
-      <h2>レシートの日付</h2>
-      <h4>2024</h4>
-    </section>
-
-    <section>
-      <ul class="main_img">
-        <li><a href="">
-          <img src="../../img/re_12.png" alt="receipt">
-        </a></li>
-      </ul>
-    </section>
-
-    <section>
-      <ul class="cs">
-
-        <li><a href="">
-            <img src="../../img/re_1.png" alt="receipt_1">
-          </a></li>
-    
-        <li><a href="">
-            <img src="../../img/re_6.png" alt="receipt_2">
-          </a></li>
-
-        <li><a href="">
-            <img src="../../img/re_13.png" alt="receipt_3">
-          </a></li>
-
-        <li><a href="">
-            <img src="../../img/re_5.png" alt="receipt_4">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/re_3.png" alt="receipt_5">
-        </a></li>     
-
-        <li><a href="">
-          <img src="../../img/re_7.png" alt="receipt_6">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/re_8.png" alt="receipt_7">
-        </a></li>    
-
-        <li><a href="">
-          <img src="../../img/re_4.png" alt="receipt_8">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/re_10.png" alt="receipt_9">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/re_11.png" alt="receipt_7">
-        </a></li>    
-
-        <li><a href="">
-          <img src="../../img/re_9.png" alt="receipt_8">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/re_2.png" alt="receipt_9">
-        </a></li>
-
-      </ul>
-    
-    </section>
-
-    <section>
-      <h3>About</h3>
-      <div class="text">
-      <p>レシートの年・月・日・時間の箇所を切り取り、それを1枚づつ撮影する。
-      <br>購入したもの、購入した場所、それを含めた購入した状況、それらのコンテキストから年・月・日・時間を切り離す。
-      <br>その日時に買い物をした記録だけがそこに残る。
-      <br>
-      <br>
-      <br>
-      Photography, Lightroom
-      <br>
-      </p>
-    </div>
-  </section>
+    <!-- タイトル・画像・動画・About は content/works/receipt_date.json から生成（admin の「作品ページ」で編集） -->
 
     <!-- 最上部に戻るボタンここから -->
      <a href="#" id="totop"></a>
@@ -122,6 +41,19 @@
   
   <a href="#" id="page_top"></a>
   
+
+  <script src="../../js/render.js?v=2"></script>
+  <script>
+    fetch('../../content/works/receipt_date.json')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        document.querySelector('.container > header')
+          .insertAdjacentHTML('afterend', PortfolioRender.workHTML(data, { base: '../../' }));
+      })
+      .catch(function(e) {
+        console.error('作品データの読み込みに失敗しました:', e);
+      });
+  </script>
 
 </body>
 

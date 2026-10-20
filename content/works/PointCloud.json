@@ -1,0 +1,46 @@
+{
+  "slug": "PointCloud",
+  "title": "Point Cloud VJシステム",
+  "year": "2024",
+  "main_images": [
+    {
+      "src": "/img/pointcloud_sample_6.png",
+      "alt": "pointcloud_vj_1"
+    }
+  ],
+  "sub_images": [],
+  "youtube": [
+    {
+      "url": "https://www.youtube.com/embed/TdNMOyyKg3A?si=CTj8fpB9dPLTZNEF"
+    }
+  ],
+  "videos": [],
+  "gallery_images": [
+    {
+      "src": "/img/pointcloud_sample_5.png",
+      "alt": "pointcloud_1"
+    },
+    {
+      "src": "/img/pointcloud_vj_1.png",
+      "alt": "pointcloud_2"
+    },
+    {
+      "src": "/img/pointcloud_sample_3.png",
+      "alt": "pointcloud_3"
+    },
+    {
+      "src": "/img/pointcloud_sample_4.png",
+      "alt": "pointcloud_4"
+    },
+    {
+      "src": "/img/pointcloud_vj_2.png",
+      "alt": "pointcloud_5"
+    },
+    {
+      "src": "/img/pointcloud_vj_3.png",
+      "alt": "pointcloud_6"
+    }
+  ],
+  "gallery_style": "cs",
+  "description": "TouchDesignerでVJシステムを制作しました。\n\nTouchDesignerを用いて、フォトグラメトリを直感的かつリアルタイムに操作可能にするシステム制作を行いました。\n学内イベント「ジャンキャリ」で操作体験を兼ねた展示を行いました。\n\nTouchDesigner, Scaniverce"
+}

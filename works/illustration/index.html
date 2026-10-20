@@ -26,57 +26,7 @@
             <!--<li class="menu-item"><a href="#">Contact</a></li>-->
       </ul>      </header>
 
-    <section>
-      <h2>Illustration</h2>
-      <h4>2020~</h4>
-    </section>
-
-    <section>
-      <ul class="main_img">
-        <li><a href="">
-          <img src="../../img/nuno_reedit.png" alt="illustraion">
-        </a></li>
-      </ul>
-    </section>
-
-    <section>
-      <ul class="cs">
-
-        <li><a href="">
-            <img src="../../img/nobi_girl.png" alt="nobi_girl">
-          </a></li>
-    
-        <li><a href="">
-            <img src="../../img/renzoku_girl.png" alt="renzoku_girl">
-          </a></li>
-
-        <li><a href="">
-            <img src="../../img/2_girls.png" alt="2_girls">
-          </a></li>
-
-        <li><a href="">
-            <img src="../../img/metya_girl.png" alt="metya_girl">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/renzzzz.png" alt="renzoku_girl2">
-        </a></li>         
-
-      </ul>
-    
-    </section>
-
-    <section>
-      <h3>About</h3>
-      <div class="text">
-      <p>デジタルペイントツールを用いたイラストレーションを制作。<br>制作過程の中で複製・変形されるイメージについて、興味関心を持ちながら制作している。
-      <br>
-      <br>
-      Procreate, iPad
-      <br>
-      </p>
-    </div>
-  </section>
+    <!-- タイトル・画像・動画・About は content/works/illustration.json から生成（admin の「作品ページ」で編集） -->
 
     <!-- 最上部に戻るボタンここから -->
      <a href="#" id="totop"></a>
@@ -91,6 +41,19 @@
   
   <a href="#" id="page_top"></a>
   
+
+  <script src="../../js/render.js?v=2"></script>
+  <script>
+    fetch('../../content/works/illustration.json')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        document.querySelector('.container > header')
+          .insertAdjacentHTML('afterend', PortfolioRender.workHTML(data, { base: '../../' }));
+      })
+      .catch(function(e) {
+        console.error('作品データの読み込みに失敗しました:', e);
+      });
+  </script>
 
 </body>
 

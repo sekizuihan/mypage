@@ -26,97 +26,7 @@
             <!--<li class="menu-item"><a href="#">Contact</a></li>-->
       </ul>      </header>
 
-    <section>
-      <h2>Creative coding</h2>
-      <h4>2022</h4>
-    </section>
-
-    <section>
-      <ul class="main_img">
-        <li><a href="">
-          <img src="../../img/creative_coding_1.png" alt="creative coding_1">
-        </a></li>
-      </ul>
-    </section>
-
-    <section>
-      <ul class="cs_an">
-
-        <li><a href="">
-            <img src="../../img/20220611_01.png" alt="flow_vol3_1">
-          </a></li>
-    
-        <li><a href="">
-            <img src="../../img/20220630.gif" alt="flow_vol3_2">
-          </a></li>
-
-        <li><a href="">
-            <img src="../../img/20220620_4.png" alt="flow_vol3_3">
-          </a></li>
-
-        <li><a href="">
-            <img src="../../img/20220601.png" alt="flow_vol3_4">
-        </a></li>
-        
-        <li><a href="">
-          <img src="../../img/20220602_03.png" alt="flow_vol3_4">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/20220618.gif" alt="flow_vol3_5">
-        </a></li>     
-
-        <li><a href="">
-          <img src="../../img/20220626.gif" alt="flow_vol3_5">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/20220620_6.png" alt="flow_vol3_5">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/20220613.gif" alt="flow_vol3_5">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/20220615.gif" alt="flow_vol3_5">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/20220616.gif" alt="flow_vol3_5">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/20220627_2.gif" alt="flow_vol3_5">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/20220607.png" alt="flow_vol3_5">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/20220624.gif" alt="flow_vol3_5">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/20220604.png" alt="flow_vol3_5">
-        </a></li>
-
-      </ul>
-    
-    </section>
-
-    <section>
-      <h3>About</h3>
-      <div class="text">
-      <p>#minacodingというコーディングチャレンジに一ヶ月間参加した際に制作。<br>毎日新たな機能を試し技術面の発展をはかりつつ、グラフィック面にも配慮しながら制作しました。
-      <br>
-      <br>
-      Processing
-      <br>
-      </p>
-    </div>
-  </section>
+    <!-- タイトル・画像・動画・About は content/works/CreativeCoding.json から生成（admin の「作品ページ」で編集） -->
 
     <!-- 最上部に戻るボタンここから -->
      <a href="#" id="totop"></a>
@@ -131,6 +41,19 @@
   
   <a href="#" id="page_top"></a>
   
+
+  <script src="../../js/render.js?v=2"></script>
+  <script>
+    fetch('../../content/works/CreativeCoding.json')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        document.querySelector('.container > header')
+          .insertAdjacentHTML('afterend', PortfolioRender.workHTML(data, { base: '../../' }));
+      })
+      .catch(function(e) {
+        console.error('作品データの読み込みに失敗しました:', e);
+      });
+  </script>
 
 </body>
 

@@ -1,0 +1,66 @@
+{
+  "slug": "receipt_date",
+  "title": "レシートの日付",
+  "year": "2024",
+  "main_images": [
+    {
+      "src": "/img/re_12.png",
+      "alt": "receipt"
+    }
+  ],
+  "sub_images": [],
+  "youtube": [],
+  "videos": [],
+  "gallery_images": [
+    {
+      "src": "/img/re_1.png",
+      "alt": "receipt_1"
+    },
+    {
+      "src": "/img/re_6.png",
+      "alt": "receipt_2"
+    },
+    {
+      "src": "/img/re_13.png",
+      "alt": "receipt_3"
+    },
+    {
+      "src": "/img/re_5.png",
+      "alt": "receipt_4"
+    },
+    {
+      "src": "/img/re_3.png",
+      "alt": "receipt_5"
+    },
+    {
+      "src": "/img/re_7.png",
+      "alt": "receipt_6"
+    },
+    {
+      "src": "/img/re_8.png",
+      "alt": "receipt_7"
+    },
+    {
+      "src": "/img/re_4.png",
+      "alt": "receipt_8"
+    },
+    {
+      "src": "/img/re_10.png",
+      "alt": "receipt_9"
+    },
+    {
+      "src": "/img/re_11.png",
+      "alt": "receipt_7"
+    },
+    {
+      "src": "/img/re_9.png",
+      "alt": "receipt_8"
+    },
+    {
+      "src": "/img/re_2.png",
+      "alt": "receipt_9"
+    }
+  ],
+  "gallery_style": "cs",
+  "description": "レシートの年・月・日・時間の箇所を切り取り、それを1枚づつ撮影する。\n購入したもの、購入した場所、それを含めた購入した状況、それらのコンテキストから年・月・日・時間を切り離す。\nその日時に買い物をした記録だけがそこに残る。\n\n\nPhotography, Lightroom"
+}

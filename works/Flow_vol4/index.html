@@ -26,38 +26,7 @@
             <!--<li class="menu-item"><a href="#">Contact</a></li>-->
       </ul>      </header>
 
-    <section>
-      <h2>Flow vol.4</h2>
-      <h4>2025</h4>
-    </section>
-
-    <section>
-      <ul class="main_img">
-        <li><a href="">
-          <img src="../../img/flow_vol4_1.png" alt="Flow_vol4_1">
-        </a></li>
-      </ul>
-    </section>
-
-    <section>
-      <iframe width="100%" height="450
-      " src="https://www.youtube.com/embed/T2IbWOlK5Z0?si=p8lYW5VVaC1RIiKi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </section>
-
-    <section>
-      <h3>About</h3>
-      <div class="text">
-      <p>オーディオビジュアルイベントFlow vol.4に出演。<br>Ableton LiveとTidal Cyclesを用い、音声のサンプリングとライブコーディングで音楽を奏でるパフォーマンスを行いました。
-      <br>
-      <br>
-      Flow vol.4<br>日時：2025年1月9日<br>場所：OIC TERRACE GATE
-      <br>
-      <br>
-      Ableton Live, TidalCycles, TouchDesigner 
-      <br>
-      </p>
-    </div>
-  </section>
+    <!-- タイトル・画像・動画・About は content/works/Flow_vol4.json から生成（admin の「作品ページ」で編集） -->
 
     <!-- 最上部に戻るボタンここから -->
      <a href="#" id="totop"></a>
@@ -71,6 +40,19 @@
   </footer>
 
   <a href="#" id="page_top"></a>
+
+  <script src="../../js/render.js?v=2"></script>
+  <script>
+    fetch('../../content/works/Flow_vol4.json')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        document.querySelector('.container > header')
+          .insertAdjacentHTML('afterend', PortfolioRender.workHTML(data, { base: '../../' }));
+      })
+      .catch(function(e) {
+        console.error('作品データの読み込みに失敗しました:', e);
+      });
+  </script>
 
 </body>
 

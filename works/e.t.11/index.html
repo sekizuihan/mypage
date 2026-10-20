@@ -26,59 +26,7 @@
             <!--<li class="menu-item"><a href="#">Contact</a></li>-->
       </ul>      </header>
 
-    <section>
-      <h2>E.T. Vol.11 Live Visual</h2>
-      <h4>2025</h4>
-    </section>
-
-    <section>
-      <ul class="main_img">
-        <li><a href="">
-          <img src="../../img/et11_3.png" alt="e.t.11_1">
-        </a></li>
-      </ul>
-    </section>
-
-    <section>
-      <iframe width="100%" height="460" src="https://www.youtube.com/embed/XX2K3MfhShY?si=K4YV2yfLLE6yfkTT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </section>
-      
-    <section>
-      <ul class="cs">
-
-        <li><a href="">
-            <img src="../../img/et11_1.png" alt="et11_1">
-          </a></li>
-    
-        <li><a href="">
-            <img src="../../img/et11_2.png" alt="et11_2">
-          </a></li>
-
-        <li><a href="">
-            <img src="../../img/et11_3.png" alt="et11_3">
-          </a></li>
-
-      </ul>
-    
-    </section>
-
-    <section>
-      <h3>About</h3>
-      <div class="text">
-      <p>E.T. Vol.11 (Electric Treatment)に出演しました。<br>moanさんのLive Visualを担当させていただきました。
-      <br>
-      <br>
-      E.T. Vol.11 (Electric Treatment)
-      <br>2025.05.25 @JIKAN＜space＞
-      <br>Live : moan
-      <br>Visual : 米田
-      <br>
-      <br>
-      TouchDesigner, Scaniverce
-      <br>
-      </p>
-    </div>
-  </section>
+    <!-- タイトル・画像・動画・About は content/works/e.t.11.json から生成（admin の「作品ページ」で編集） -->
 
     <!-- 最上部に戻るボタンここから -->
      <a href="#" id="totop"></a>
@@ -93,6 +41,19 @@
   
   <a href="#" id="page_top"></a>
   
+
+  <script src="../../js/render.js?v=2"></script>
+  <script>
+    fetch('../../content/works/e.t.11.json')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        document.querySelector('.container > header')
+          .insertAdjacentHTML('afterend', PortfolioRender.workHTML(data, { base: '../../' }));
+      })
+      .catch(function(e) {
+        console.error('作品データの読み込みに失敗しました:', e);
+      });
+  </script>
 
 </body>
 

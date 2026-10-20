@@ -130,88 +130,93 @@ collections:
                     required: false
                     hint: "例: Info / Detail / Article"
 
-  # ─── 個別作品ページ（テンプレート方式・新規作品用）─────────────────────
+  # ─── 作品ページ（works/<フォルダ名>/ と work.html?slug=...）─────────────
   - name: "work_pages"
-    label: "作品ページ（新規作成用）"
+    label: "作品ページ"
+    label_singular: "作品ページ"
+    description: "各作品の詳細ページ。上から「タイトル・年」→ メイン画像 → サブ画像 → YouTube → 動画 → ギャラリー → About の順に表示されます。"
     folder: "content/works"
     create: true
     slug: "{{slug}}"
+    identifier_field: "title"
     extension: "json"
     format: "json"
-    summary: "{{title}} ({{year}})"
+    summary: "{{year}}　{{title}}"
+    sortable_fields:
+      fields: ["year", "title", "slug"]
+      default:
+        field: "year"
+        direction: "descending"
     fields:
-      - label: "スラッグ（URL用・半角英数字とハイフンのみ）"
+      - label: "スラッグ（ファイル名・URL）"
         name: "slug"
         widget: "string"
-        hint: "例: flow-vol8 → work.html?slug=flow-vol8 でアクセスできます"
+        pattern: ['^[A-Za-z0-9._-]+$', "半角英数字と . _ - だけ使えます"]
+        hint: "既存の作品は変更しないでください（ページが表示されなくなります）。新しい作品は work.html?slug=ここの値 で表示されます。例: flow-vol8"
       - label: "タイトル"
         name: "title"
         widget: "string"
-        hint: "例: Flow vol.8"
-      - label: "サブタイトル（種別）"
-        name: "subtitle"
-        widget: "string"
-        hint: "例: VJ / インスタレーション / 個展 / MV"
+        hint: "例: Flow vol.8 VJ"
       - label: "年"
         name: "year"
-        widget: "number"
-        value_type: "int"
-      - label: "使用ツール・メディア"
-        name: "tools"
         widget: "string"
-        hint: "例: TouchDesigner / 2026"
-      - label: "メイン画像（上部大画像）"
+        hint: "例: 2026 / 2020~"
+      - label: "メイン画像"
         name: "main_images"
         widget: "list"
-        collapsed: false
-        summary: "{{fields.alt}}"
+        collapsed: true
+        summary: "{{fields.src}}"
+        hint: "タイトルのすぐ下に大きく表示されます。複数入れると縦に並びます。"
         fields:
-          - label: "画像"
-            name: "src"
-            widget: "image"
-          - label: "alt属性"
-            name: "alt"
-            widget: "string"
-      - label: "サブ画像（メイン下の大画像・任意）"
+          - { label: "画像", name: "src", widget: "image" }
+          - { label: "代替テキスト（alt）", name: "alt", widget: "string", required: false }
+      - label: "サブ画像"
         name: "sub_images"
         widget: "list"
         required: false
         collapsed: true
-        summary: "{{fields.alt}}"
+        summary: "{{fields.src}}"
+        hint: "メイン画像の下に表示されます（任意）。"
         fields:
-          - label: "画像"
-            name: "src"
-            widget: "image"
-          - label: "alt属性"
-            name: "alt"
-            widget: "string"
-      - label: "動画（任意）"
+          - { label: "画像", name: "src", widget: "image" }
+          - { label: "代替テキスト（alt）", name: "alt", widget: "string", required: false }
+      - label: "YouTube"
+        name: "youtube"
+        widget: "list"
+        required: false
+        collapsed: true
+        summary: "{{fields.url}}"
+        hint: "YouTube の URL をそのまま貼れば埋め込みになります（任意）。"
+        fields:
+          - { label: "YouTube の URL", name: "url", widget: "string" }
+      - label: "動画ファイル"
         name: "videos"
         widget: "list"
         required: false
         collapsed: true
-        summary: "{{fields.alt}}"
+        summary: "{{fields.src}}"
+        hint: "mp4 などの動画ファイル（任意）。"
         fields:
-          - label: "動画ファイル"
-            name: "src"
-            widget: "file"
-          - label: "alt属性"
-            name: "alt"
-            widget: "string"
-      - label: "ギャラリー画像（グリッド表示・任意）"
+          - { label: "動画", name: "src", widget: "file" }
+      - label: "ギャラリー画像"
         name: "gallery_images"
         widget: "list"
         required: false
         collapsed: true
-        summary: "{{fields.alt}}"
+        summary: "{{fields.src}}"
+        hint: "小さい画像のグリッド（任意）。上から順に左上から並びます。"
         fields:
-          - label: "画像"
-            name: "src"
-            widget: "image"
-          - label: "alt属性"
-            name: "alt"
-            widget: "string"
-      - label: "説明文（About）"
+          - { label: "画像", name: "src", widget: "image" }
+          - { label: "代替テキスト（alt）", name: "alt", widget: "string", required: false }
+      - label: "ギャラリーの表示スタイル"
+        name: "gallery_style"
+        widget: "select"
+        default: "cs"
+        options:
+          - { label: "標準（16:9 で切り抜き）", value: "cs" }
+          - { label: "3列（高さ固定・GIF 向け）", value: "cs_an" }
+      - label: "About（説明文）"
         name: "description"
-        widget: "markdown"
-        hint: "About セクションの本文。Markdown で記述できます。"
+        widget: "text"
+        required: false
+        hint: "改行はそのまま改行になります。リンクは `[表示する文字](https://...)` と書きます。"

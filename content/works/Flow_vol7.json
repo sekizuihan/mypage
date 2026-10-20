@@ -1,0 +1,42 @@
+{
+  "slug": "Flow_vol7",
+  "title": "Flow vol.7 VJ",
+  "year": "2025",
+  "main_images": [
+    {
+      "src": "/img/flow_vol7_1.png",
+      "alt": "Flow_vol7_1"
+    }
+  ],
+  "sub_images": [],
+  "youtube": [
+    {
+      "url": "https://www.youtube.com/embed/yHJlSbkNkPM?si=Lv9FsSQ8nJRHL7wW"
+    }
+  ],
+  "videos": [],
+  "gallery_images": [
+    {
+      "src": "/img/Flow_vol7_3.png",
+      "alt": "flow_vol7_1"
+    },
+    {
+      "src": "/img/Flow_vol7_2.png",
+      "alt": "flow_vol7_2"
+    },
+    {
+      "src": "/img/Flow_vol7_4.png",
+      "alt": "flow_vol7_3"
+    },
+    {
+      "src": "/img/Flow_vol7_5.png",
+      "alt": "flow_vol7_4"
+    },
+    {
+      "src": "/img/Flow_vol7_6.png",
+      "alt": "flow_vol7_5"
+    }
+  ],
+  "gallery_style": "cs",
+  "description": "オーディオビジュアルイベントFlow vol.7に出演。\nTouchDesignerで制作したシステムでVJを行いました。\n\n\nフォトグラメトリをVJ内で扱うことで、パフォーマンス内で何度も日常の光景を反芻することを試みています。\n加えて、そこに肌のテクスチャを用いた有機的な動きを持つオブジェクト「肌のオブジェクト」をモンタージュすることにより、音楽の身体的体験の要素と、生活の光景を知覚している主体である身体を暗示しています。\n\nFlow vol.7\n日時：2025年7月15日\n場所：立命館大学 OICキャンパス TERRACE GATE\n\nTouchDesigner, Scaniverce, Photograph"
+}

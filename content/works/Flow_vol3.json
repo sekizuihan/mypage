@@ -1,0 +1,46 @@
+{
+  "slug": "Flow_vol3",
+  "title": "Flow vol.3 VJ",
+  "year": "2024",
+  "main_images": [
+    {
+      "src": "/img/flow_vol3_2.png",
+      "alt": "Flow_vol3_1"
+    }
+  ],
+  "sub_images": [],
+  "youtube": [
+    {
+      "url": "https://www.youtube.com/embed/Kudo_zF28dc?si=2sXFWZYbtcRQxP3q"
+    }
+  ],
+  "videos": [],
+  "gallery_images": [
+    {
+      "src": "/img/flow_vol3_small.png",
+      "alt": "flow_vol3_1"
+    },
+    {
+      "src": "/img/flow_vol3_small_2.png",
+      "alt": "flow_vol3_2"
+    },
+    {
+      "src": "/img/flow_vol3_small_3.png",
+      "alt": "flow_vol3_3"
+    },
+    {
+      "src": "/img/flow_vol3_1.png",
+      "alt": "flow_vol3_4"
+    },
+    {
+      "src": "/img/flow_vol3_3.png",
+      "alt": "flow_vol3_5"
+    },
+    {
+      "src": "/img/flow_vol3_small_4.png",
+      "alt": "flow_vol3_5"
+    }
+  ],
+  "gallery_style": "cs",
+  "description": "オーディオビジュアルイベントFlow vol.3に出演。\nTouchDesignerで制作したシステムでVJを行いました。\n\nPlayful、というテーマを軸に、システム全体の設計やビジュアル表現を統一した上で、遊び心のある色彩や形を用いました。Scaniverceでスキャンしたフォトグラメトリデータを用い、データ公園や遊具、庭など、身近な光景の中でも「遊び」と近しいオブジェクトを選択しました。\nTouchDesignerを用いて、フォトグラメトリを直感的かつリアルタイムに操作可能にするシステム制作を行いました。\n\nFlow vol.3\n日時：2024年12月4日\n場所：OIC TERRACE GATE\n\nTouchDesigner, Scaniverce"
+}

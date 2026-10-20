@@ -1,0 +1,46 @@
+{
+  "slug": "moumaku_souzou",
+  "title": "網膜を想像する",
+  "year": "2024",
+  "main_images": [
+    {
+      "src": "/img/imageof_1.png",
+      "alt": "網膜を想像する"
+    }
+  ],
+  "sub_images": [],
+  "youtube": [
+    {
+      "url": "https://www.youtube.com/embed/5Uh9EivXGqw?si=HyxjIp-HXLJhE2-q"
+    }
+  ],
+  "videos": [],
+  "gallery_images": [
+    {
+      "src": "/img/im_1.png",
+      "alt": "im_1"
+    },
+    {
+      "src": "/img/im_5.png",
+      "alt": "im_2"
+    },
+    {
+      "src": "/img/im_3.png",
+      "alt": "im_3"
+    },
+    {
+      "src": "/img/im_2.png",
+      "alt": "fim_4"
+    },
+    {
+      "src": "/img/im_6.png",
+      "alt": "im_5"
+    },
+    {
+      "src": "/img/im_4.png",
+      "alt": "im_6"
+    }
+  ],
+  "gallery_style": "cs",
+  "description": "目の中に光が入り網膜に当たったとき、脳がその信号を解釈し、外界の像として知覚する。しかし、私たちは網膜が受け取った光を直接見ることは叶わない。この作品では正弦波によって構成される音を用いた。その波形を印刷し、カメラオブスキュラのスクリーンに重ね合わせて撮影した。流動的な波形は、知覚が静的なものでなく、絶えず与えられる情報によって解釈を書き換えていくものであることを示唆している。抽象化された「光」によって、見えない網膜を想像する。\n\n夏期集中科目：映像創作論で制作。\nPure Dataで生成した音声と波形画像を、自作のカメラオブスキュラを模した装置の撮像箇所に重ね、コマ撮りを行った。\n\nPure Data, iPhone"
+}

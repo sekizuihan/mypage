@@ -1,0 +1,38 @@
+{
+  "slug": "illustration",
+  "title": "Illustration",
+  "year": "2020~",
+  "main_images": [
+    {
+      "src": "/img/nuno_reedit.png",
+      "alt": "illustraion"
+    }
+  ],
+  "sub_images": [],
+  "youtube": [],
+  "videos": [],
+  "gallery_images": [
+    {
+      "src": "/img/nobi_girl.png",
+      "alt": "nobi_girl"
+    },
+    {
+      "src": "/img/renzoku_girl.png",
+      "alt": "renzoku_girl"
+    },
+    {
+      "src": "/img/2_girls.png",
+      "alt": "2_girls"
+    },
+    {
+      "src": "/img/metya_girl.png",
+      "alt": "metya_girl"
+    },
+    {
+      "src": "/img/renzzzz.png",
+      "alt": "renzoku_girl2"
+    }
+  ],
+  "gallery_style": "cs",
+  "description": "デジタルペイントツールを用いたイラストレーションを制作。\n制作過程の中で複製・変形されるイメージについて、興味関心を持ちながら制作している。\n\nProcreate, iPad"
+}

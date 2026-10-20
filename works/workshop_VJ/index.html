@@ -26,49 +26,7 @@
             <!--<li class="menu-item"><a href="#">Contact</a></li>-->
       </ul>      </header>
 
-    <section>
-      <h2>立命館×ボーネルンド PLAYFUL LAB FES ワークショップ</h2>
-      <h4>2024</h4>
-    </section>
-
-    <section>
-      <ul class="main_img">
-        <li><a href="">
-          <img src="../../img/workshop_re.png" alt="ワークショップ">
-        </a></li>
-      </ul>
-    </section>
-
-    <section>
-      <ul class="cs">
-        <li><a href="">
-            <img src="../../img/workshop_2.png" alt="ワークショップの様子">
-          </a></li>
-    
-        <li><a href="">
-            <img src="../../img/workshop_3.png" alt="ワークショップの様子">
-          </a></li>
-
-        <li><a href="">
-            <img src="../../img/workshop_4.png" alt="ワークショップの様子">
-          </a></li>
-
-      </ul>
-    
-    </section>
-
-    <section>
-      <h3>About</h3>
-      <div class="text">
-      <p>2024年7月に開催された立命館×ボーネルンド PLAYFUL LAB FES にて、子ども向けのDJ / VJ 体験ワークショップを実施しました。
-      <br>DJとVJ、それぞれ別の組に体験いただくことも行うことで、即興的な音と映像のセッションが生まれ、当日は20人以上の方に体験していただくことができました。
-      <br>
-      <br>
-      TouchDesigner
-      <br>
-      </p>
-    </div>
-  </section>
+    <!-- タイトル・画像・動画・About は content/works/workshop_VJ.json から生成（admin の「作品ページ」で編集） -->
 
     <!-- 最上部に戻るボタンここから -->
      <a href="#" id="totop"></a>
@@ -82,6 +40,19 @@
   </footer>
 
   <a href="#" id="page_top"></a>
+
+  <script src="../../js/render.js?v=2"></script>
+  <script>
+    fetch('../../content/works/workshop_VJ.json')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        document.querySelector('.container > header')
+          .insertAdjacentHTML('afterend', PortfolioRender.workHTML(data, { base: '../../' }));
+      })
+      .catch(function(e) {
+        console.error('作品データの読み込みに失敗しました:', e);
+      });
+  </script>
 
 </body>
 

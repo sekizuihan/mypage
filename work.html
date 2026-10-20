@@ -9,8 +9,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LgzfgAyPHGU4L/9h/VD8T/mRxIdOMSGTFXXhHBl35OBdJ9S6sxOYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" href="img/favicon_cat.ico">
   <link rel="apple-touch-icon" href="img/0009.png" sizes="180x180">
-  <!-- Markdown パーサー -->
-  <script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"></script>
 </head>
 
 <body>
@@ -25,38 +23,7 @@
         </ul>
       </header>
 
-      <!-- タイトル・年 -->
-      <section id="work-header" style="display:none;">
-        <h2 id="work-title"></h2>
-        <h4 id="work-year"></h4>
-      </section>
-
-      <!-- メイン画像 -->
-      <section id="work-main-images" style="display:none;">
-        <ul class="main_img" id="main-images-list"></ul>
-      </section>
-
-      <!-- サブ画像 -->
-      <section id="work-sub-images" style="display:none;">
-        <ul class="sub_img" id="sub-images-list"></ul>
-      </section>
-
-      <!-- 動画 -->
-      <section id="work-videos" style="display:none;"></section>
-
-      <!-- ギャラリー -->
-      <section id="work-gallery" style="display:none;">
-        <ul class="cs" id="gallery-list"></ul>
-      </section>
-
-      <!-- About -->
-      <section id="work-about" style="display:none;">
-        <h3>About</h3>
-        <div class="text">
-          <div id="work-description"></div>
-          <p id="work-tools-footer" style="margin-top:1em; color:#888;"></p>
-        </div>
-      </section>
+      <!-- 作品の内容は content/works/<slug>.json から生成（admin の「作品ページ」で編集） -->
 
       <a href="#" id="totop"></a>
     </div>
@@ -65,79 +32,30 @@
   <footer><br></footer>
   <a href="#" id="page_top"></a>
 
+  <script src="js/render.js?v=2"></script>
   <script>
+    // 新しく追加した作品は work.html?slug=<スラッグ> で表示する
     var slug = new URLSearchParams(window.location.search).get('slug');
 
+    function notFound() {
+      document.querySelector('.container > header')
+        .insertAdjacentHTML('afterend', '<p style="padding:2em 0;">作品が見つかりませんでした。</p>');
+    }
+
     if (!slug) {
-      document.body.innerHTML = '<p style="padding:2em;">作品が見つかりません。</p>';
+      notFound();
     } else {
-      fetch('/content/works/' + encodeURIComponent(slug) + '.json')
+      fetch('content/works/' + encodeURIComponent(slug) + '.json')
         .then(function(r) {
           if (!r.ok) throw new Error('not found');
           return r.json();
         })
-        .then(function(d) {
-          document.title = d.title + ' | Yoneda Nanaho';
-
-          // ── タイトル・年
-          document.getElementById('work-title').textContent = d.title + (d.subtitle ? '　' + d.subtitle : '');
-          document.getElementById('work-year').textContent = d.year || '';
-          document.getElementById('work-header').style.display = '';
-
-          // ── メイン画像
-          if (d.main_images && d.main_images.length) {
-            var mainList = document.getElementById('main-images-list');
-            mainList.innerHTML = d.main_images.map(function(img) {
-              return '<li><a href=""><img src="' + img.src + '" alt="' + img.alt + '"></a></li>';
-            }).join('');
-            document.getElementById('work-main-images').style.display = '';
-          }
-
-          // ── サブ画像
-          if (d.sub_images && d.sub_images.length) {
-            var subList = document.getElementById('sub-images-list');
-            subList.innerHTML = d.sub_images.map(function(img) {
-              return '<li><a href=""><img src="' + img.src + '" alt="' + img.alt + '"></a></li>';
-            }).join('');
-            document.getElementById('work-sub-images').style.display = '';
-          }
-
-          // ── 動画
-          if (d.videos && d.videos.length) {
-            var videoSection = document.getElementById('work-videos');
-            videoSection.innerHTML = d.videos.map(function(v) {
-              return '<video width="100%" controls style="max-width:100%;height:auto;display:block;">' +
-                '<source src="' + v.src + '" type="video/mp4" alt="' + v.alt + '">' +
-                'お使いのブラウザは動画タグに対応していません。' +
-                '</video><br>';
-            }).join('');
-            videoSection.style.display = '';
-          }
-
-          // ── ギャラリー
-          if (d.gallery_images && d.gallery_images.length) {
-            var galleryList = document.getElementById('gallery-list');
-            galleryList.innerHTML = d.gallery_images.map(function(img) {
-              return '<li><a href=""><img src="' + img.src + '" alt="' + img.alt + '"></a></li>';
-            }).join('');
-            document.getElementById('work-gallery').style.display = '';
-          }
-
-          // ── About
-          if (d.description || d.tools) {
-            if (d.description) {
-              // marked で Markdown → HTML に変換
-              document.getElementById('work-description').innerHTML = marked.parse(d.description);
-            }
-            if (d.tools) {
-              document.getElementById('work-tools-footer').textContent = d.tools;
-            }
-            document.getElementById('work-about').style.display = '';
-          }
+        .then(function(data) {
+          document.title = data.title + ' | Yoneda Nanaho';
+          document.querySelector('.container > header')
+            .insertAdjacentHTML('afterend', PortfolioRender.workHTML(data, { base: '' }));
         })
-        .catch(function() {
-          document.body.innerHTML = '<p style="padding:2em;">作品データが見つかりませんでした。</p>';
-        });
+        .catch(notFound);
     }
   </script>
 </body>

@@ -1,0 +1,55 @@
+{
+  "slug": "Sway",
+  "title": "Sway! VJ",
+  "year": "2026",
+  "main_images": [
+    {
+      "src": "/img/sway_cap1.png",
+      "alt": "Sway VJ"
+    }
+  ],
+  "sub_images": [],
+  "youtube": [],
+  "videos": [
+    {
+      "src": "/img/sway_1_compressed.mp4"
+    },
+    {
+      "src": "/img/sway_3_2_compressed.mp4"
+    },
+    {
+      "src": "/img/sway_mov1_compressed.mp4"
+    },
+    {
+      "src": "/img/sway_mov2_compressed.mov"
+    }
+  ],
+  "gallery_images": [
+    {
+      "src": "/img/sway_cap5.png",
+      "alt": "sway VJシーン"
+    },
+    {
+      "src": "/img/sway_cap6.png",
+      "alt": "sway VJシーン"
+    },
+    {
+      "src": "/img/sway_cap3.png",
+      "alt": "sway VJシーン"
+    },
+    {
+      "src": "/img/sway_cap7.png",
+      "alt": "sway VJシーン"
+    },
+    {
+      "src": "/img/sway_cap8.png",
+      "alt": "sway VJシーン"
+    },
+    {
+      "src": "/img/sway_cap2.png",
+      "alt": "sway VJシーン"
+    }
+  ],
+  "gallery_style": "cs",
+  "description": "SOCORE FACTORYで行われたBotanicaを再考するイベント「Sway!」にて、Le MakeUpさん、UrisさんのVJを担当させていただきました。\n\n\nSway!\n日時：2026年3月8日\n場所：SOCORE FACTORY\n\nTouchDesigner, Scaniverce"
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "Gunya_on",
+  "title": "ぐにゃ音(gunya_on)",
+  "year": "2023",
+  "main_images": [
+    {
+      "src": "/img/gunyaon_1.jpg",
+      "alt": "ぐにゃ音"
+    }
+  ],
+  "sub_images": [],
+  "youtube": [
+    {
+      "url": "https://www.youtube.com/embed/wG0w8MGui6Q?si=LhJKElfjlpwfpxtf"
+    }
+  ],
+  "videos": [],
+  "gallery_images": [
+    {
+      "src": "/img/gunya_2.png",
+      "alt": "ぐにゃ音_1"
+    },
+    {
+      "src": "/img/gunya_1.png",
+      "alt": "ぐにゃ音_2"
+    },
+    {
+      "src": "/img/gunya_3.png",
+      "alt": "ぐにゃ音_3"
+    }
+  ],
+  "gallery_style": "cs",
+  "description": "これまで取り組んできた写真をデジタルメディア上でどのように活用できるのか模索することを目的としており、写真と音楽の融合に加え、「体験者が変化を加えられる写真の\"ような\"イメージを制作する」ことを目指して制作した。\n\nこのプログラムでは、画面をなぞることによって画像と音をリアルタイムで変化させることができる。体験者は自らの操作によって、音とイメージの相互作用を体験することができる。\n\n所属学部のイベント「ジャンキャリ2023」に出展し、展示部門で最優秀賞をいただいた。\n\np5.js, Photography"
+}

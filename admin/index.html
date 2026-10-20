@@ -7,7 +7,7 @@
   </head>
   <body>
     <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
-    <script src="../js/render.js"></script>
+    <script src="../js/render.js?v=2"></script>
     <script>
       // 編集画面右側のプレビューを、実際のサイトと同じ HTML・CSS で表示する。
       // HTML の組み立ては js/render.js をサイト本体と共有している。
@@ -44,6 +44,15 @@
       CMS.registerPreviewTemplate('about', function (props) {
         return h('main', null,
           h('div', { className: 'container', dangerouslySetInnerHTML: { __html: PortfolioRender.aboutHTML(dataOf(props)) } }));
+      });
+
+      // ── 作品ページ（css/style_works.css）
+      CMS.registerPreviewStyle('../css/bootstrap.css', { collection: 'work_pages' });
+      CMS.registerPreviewStyle('../css/style_works.css', { collection: 'work_pages' });
+
+      CMS.registerPreviewTemplate('work_pages', function (props) {
+        return h('main', null,
+          h('div', { className: 'container', dangerouslySetInnerHTML: { __html: PortfolioRender.workHTML(dataOf(props)) } }));
       });
     </script>
   </body>

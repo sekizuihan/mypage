@@ -26,76 +26,7 @@
             <!--<li class="menu-item"><a href="#">Contact</a></li>-->
       </ul>      </header>
 
-    <section>
-      <h2>グループ展「Mirror, Mirrors」</h2>
-      <h4>2023</h4>
-    </section>
-
-    <section>
-      <ul class="main_img">
-        <li><a href="">
-          <img src="../../img/m-m_1.png" alt="Mirror, Mirrors">
-        </a></li>
-      </ul>
-    </section>
-
-    <section>
-      <ul class="sub_img">
-        <li><a href="">
-          <img src="../../img/m-m_2.png" alt="Mirror, Mirrors_1">
-        </a></li>
-      </ul>
-    </section>
-
-    <section>
-      <ul class="cs">
-
-        <li><a href="">
-            <img src="../../img/m_m4.png" alt="Mirror, Mirrors_1">
-          </a></li>
-    
-        <li><a href="">
-            <img src="../../img/m_m2.png" alt="Mirror, Mirrors_2">
-          </a></li>
-
-        <li><a href="">
-            <img src="../../img/m_m6.png" alt="Mirror, Mirrors_3">
-          </a></li>
-
-        <li><a href="">
-            <img src="../../img/m_m7.png" alt="Mirror, Mirrors_4">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/m_m8.png" alt="Mirror, Mirrors_5">
-        </a></li>     
-
-        <li><a href="">
-          <img src="../../img/m-m_2.png" alt="Mirror, Mirrors_6">
-        </a></li>
-
-      </ul>
-    
-    </section>
-
-    <section>
-      <h3>About</h3>
-      <div class="text">
-      <p>有志の出展者10人で集まり、絵画、写真、インスタレーション、グラフィックデザイン、小説、詩、など多様な媒体での作品展を開催しました。友人2人と共に企画を担当し、展示ギャラリーやコンセプトの検討、スケジュール管理や広報・展示のディレクションなどを行いました。
-      <br>自身は写真作品、立体彫刻作品などを展示しました。
-      <br>
-      <br>
-      「Mirror, mirrors -決して見えないものを見よ-」
-      <br>会期：2023年9月14日〜20日
-      <br>場所：堀川御池ギャラリー １階・ホールA
-      <br>
-      <br>
-      Photography, Exhibition planning, Sculpture works
-
-      <br>
-      </p>
-    </div>
-  </section>
+    <!-- タイトル・画像・動画・About は content/works/mirror_mirrors.json から生成（admin の「作品ページ」で編集） -->
 
     <!-- 最上部に戻るボタンここから -->
      <a href="#" id="totop"></a>
@@ -110,6 +41,19 @@
   
   <a href="#" id="page_top"></a>
   
+
+  <script src="../../js/render.js?v=2"></script>
+  <script>
+    fetch('../../content/works/mirror_mirrors.json')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        document.querySelector('.container > header')
+          .insertAdjacentHTML('afterend', PortfolioRender.workHTML(data, { base: '../../' }));
+      })
+      .catch(function(e) {
+        console.error('作品データの読み込みに失敗しました:', e);
+      });
+  </script>
 
 </body>
 

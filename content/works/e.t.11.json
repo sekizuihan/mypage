@@ -1,0 +1,34 @@
+{
+  "slug": "e.t.11",
+  "title": "E.T. Vol.11 Live Visual",
+  "year": "2025",
+  "main_images": [
+    {
+      "src": "/img/et11_3.png",
+      "alt": "e.t.11_1"
+    }
+  ],
+  "sub_images": [],
+  "youtube": [
+    {
+      "url": "https://www.youtube.com/embed/XX2K3MfhShY?si=K4YV2yfLLE6yfkTT"
+    }
+  ],
+  "videos": [],
+  "gallery_images": [
+    {
+      "src": "/img/et11_1.png",
+      "alt": "et11_1"
+    },
+    {
+      "src": "/img/et11_2.png",
+      "alt": "et11_2"
+    },
+    {
+      "src": "/img/et11_3.png",
+      "alt": "et11_3"
+    }
+  ],
+  "gallery_style": "cs",
+  "description": "E.T. Vol.11 (Electric Treatment)に出演しました。\nmoanさんのLive Visualを担当させていただきました。\n\nE.T. Vol.11 (Electric Treatment)\n2025.05.25 @JIKAN＜space＞\nLive : moan\nVisual : 米田\n\nTouchDesigner, Scaniverce"
+}

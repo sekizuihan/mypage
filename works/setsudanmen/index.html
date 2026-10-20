@@ -26,85 +26,7 @@
             <!--<li class="menu-item"><a href="#">Contact</a></li>-->
       </ul>      </header>
 
-    <section>
-      <h2>個展「切断面」</h2>
-      <h4>2025</h4>
-    </section>
-
-    <section>
-      <ul class="main_img">
-        <li><a href="">
-          <img src="../../img/setu_.png" alt="切断面photo">
-        </a></li>
-      </ul>
-    </section>
-
-    <section>
-      <ul class="sub_img">
-        <li><a href="">
-          <img src="../../img/setu_8.png" alt="切断面photo">
-        </a></li>
-      </ul>
-    </section>
-
-    <section>
-      <ul class="cs">
-
-        <li><a href="">
-            <img src="../../img/setu_4.png" alt="切断面photo">
-          </a></li>
-    
-        <li><a href="">
-            <img src="../../img/setu_7.png" alt="切断面photo">
-          </a></li>
-
-        <li><a href="">
-            <img src="../../img/setu_8.png" alt="切断面photo">
-          </a></li>
-
-        <li><a href="">
-            <img src="../../img/setu_2.png" alt="切断面photo">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/setu_6.png" alt="切断面photo">
-        </a></li>     
-
-        <li><a href="">
-          <img src="../../img/setu_11.png" alt="切断面photo">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/setu_5.png" alt="切断面photo">
-        </a></li>
-
-      </ul>
-    
-    </section>
-
-    <section>
-      <h3>About</h3>
-      <div class="text">
-      <p>
-      Gallery Metaboにて、初の個展を開催しました。
-      <br>
-      本来、現実を切り取る側面を持つ写真を、手作業で再度切断することによって、解体する試みでした。
-      <br>
-      紙・布・アクリルパネルなどさまざまな支持体を用いて、さまざまな切断の手段を展示しています。
-      <br>
-      こちらの展示は、KYOTOGRAPHIE サテライトイベント KG+ としても展示させていただきました。
-      <br>
-      <br>米田菜々穂 個展『切断面』
-      <br>場所：ギャラリー メタボ 103
-      <br>日時：2025.4/21.月 - 4/29.火　11：00〜19：00[最終日 18：00まで]
-      <br>キュレーター：青木勇都
-      <br>
-      <br>
-      Photography
-      <br>
-      </p>
-    </div>
-  </section>
+    <!-- タイトル・画像・動画・About は content/works/setsudanmen.json から生成（admin の「作品ページ」で編集） -->
 
     <!-- 最上部に戻るボタンここから -->
      <a href="#" id="totop"></a>
@@ -119,6 +41,19 @@
   
   <a href="#" id="page_top"></a>
   
+
+  <script src="../../js/render.js?v=2"></script>
+  <script>
+    fetch('../../content/works/setsudanmen.json')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        document.querySelector('.container > header')
+          .insertAdjacentHTML('afterend', PortfolioRender.workHTML(data, { base: '../../' }));
+      })
+      .catch(function(e) {
+        console.error('作品データの読み込みに失敗しました:', e);
+      });
+  </script>
 
 </body>
 

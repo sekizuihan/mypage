@@ -26,69 +26,7 @@
             <!--<li class="menu-item"><a href="#">Contact</a></li>-->
       </ul>      </header>
 
-    <section>
-      <h2>Point Cloud VJシステム</h2>
-      <h4>2024</h4>
-    </section>
-
-    <section>
-      <ul class="main_img">
-        <li><a href="">
-          <img src="../../img/pointcloud_sample_6.png" alt="pointcloud_vj_1">
-        </a></li>
-      </ul>
-    </section>
-
-    <section>
-      <iframe width="100%" height="450" src="https://www.youtube.com/embed/TdNMOyyKg3A?si=CTj8fpB9dPLTZNEF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </section>
-
-    <section>
-      <ul class="cs">
-
-        <li><a href="">
-            <img src="../../img/pointcloud_sample_5.png" alt="pointcloud_1">
-          </a></li>
-    
-        <li><a href="">
-            <img src="../../img/pointcloud_vj_1.png" alt="pointcloud_2">
-          </a></li>
-
-        <li><a href="">
-            <img src="../../img/pointcloud_sample_3.png" alt="pointcloud_3">
-          </a></li>
-
-        <li><a href="">
-            <img src="../../img/pointcloud_sample_4.png" alt="pointcloud_4">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/pointcloud_vj_2.png" alt="pointcloud_5">
-        </a></li>
-
-        <li><a href="">
-          <img src="../../img/pointcloud_vj_3.png" alt="pointcloud_6">
-        </a></li>
-
-      </ul>
-    
-    </section>
-
-    <section>
-      <h3>About</h3>
-      <div class="text">
-      <p>TouchDesignerでVJシステムを制作しました。
-      <br>
-      <br>
-      TouchDesignerを用いて、フォトグラメトリを直感的かつリアルタイムに操作可能にするシステム制作を行いました。<br>
-      学内イベント「ジャンキャリ」で操作体験を兼ねた展示を行いました。
-      <br>
-      <br>
-      TouchDesigner, Scaniverce
-      <br>
-      </p>
-    </div>
-  </section>
+    <!-- タイトル・画像・動画・About は content/works/PointCloud.json から生成（admin の「作品ページ」で編集） -->
 
     <!-- 最上部に戻るボタンここから -->
      <a href="#" id="totop"></a>
@@ -102,6 +40,19 @@
   </footer>
 
   <a href="#" id="page_top"></a>
+
+  <script src="../../js/render.js?v=2"></script>
+  <script>
+    fetch('../../content/works/PointCloud.json')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        document.querySelector('.container > header')
+          .insertAdjacentHTML('afterend', PortfolioRender.workHTML(data, { base: '../../' }));
+      })
+      .catch(function(e) {
+        console.error('作品データの読み込みに失敗しました:', e);
+      });
+  </script>
 
 </body>
 

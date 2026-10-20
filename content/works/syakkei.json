@@ -1,0 +1,21 @@
+{
+  "slug": "syakkei",
+  "title": "借景",
+  "year": "2025",
+  "main_images": [
+    {
+      "src": "/img/koukokubosyu-tyu-copy.png",
+      "alt": "広告募集中"
+    }
+  ],
+  "sub_images": [],
+  "youtube": [
+    {
+      "url": "https://www.youtube.com/embed/HNCpQlVtKFE?si=2FMG6qzYMNqlPV9q"
+    }
+  ],
+  "videos": [],
+  "gallery_images": [],
+  "gallery_style": "cs",
+  "description": "フォトグラメトリで取得したデータと、3DCGを組み合わせて構成しました。\n「[広告募集中広告](https://neort.io/challenge/cuupks4n70rs0t8mq2g0)」企画に応募し、KITTE大阪のデジタルサイネージにて投影されました。\n\n広告募集中広告という題のため、暮らしの中に広告が置かれるイメージを、集ってゆるやかに揺れ動くフォトグラメトリデータで表しました。\n\nTouchDesigner, Scaniverce"
+}
